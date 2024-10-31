@@ -185,3 +185,4 @@ if __name__ == '__main__':
     for org_name, org_data in organisations.items():
         logger.info(f'Scraping {org_data["ical_name"]}...')
         update_calendar(org_data["scrape_function"](), org_data["ical_file"], org_data["ical_name"])
+    git_commit_and_push()
