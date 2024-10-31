@@ -134,6 +134,7 @@ def update_calendar(events, calendar_file, calendar_name):
         calendar = Calendar()
 
     calendar.name = calendar_name
+    calendar.extra.append(f'X-WR-CALNAME:{calendar_name}') # for iCal
 
     existing_events = {event.url for event in calendar.events}
 
