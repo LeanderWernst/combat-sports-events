@@ -103,11 +103,16 @@ def scrape_ufc():
             }
 
             # Parsing of dates and event creation for each date
+            main_card_begin = None
             for section, timestamp_id in event_dates.items():
                 timestamp = div_fight_dates[timestamp_id]
                 parsed_begin_date = dateparser.parse(timestamp).astimezone(timezone.utc)
                 event_begin_utc = parsed_begin_date.astimezone(timezone.utc).isoformat() if parsed_begin_date else None
-                event_end_utc = (parsed_begin_date + timedelta(hours=config["duration"])).astimezone(timezone.utc).isoformat()
+                
+                if section == "Main-Card":
+                    main_card_begin = event_begin_utc
+
+                event_end_utc = main_card_begin if section == "Prelims" and main_card_begin else (parsed_begin_date + timedelta(hours=config["duration"])).astimezone(timezone.utc).isoformat()
 
                 event = {
                     "name": event_name + " - " + section,
