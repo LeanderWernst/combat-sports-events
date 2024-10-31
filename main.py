@@ -10,6 +10,7 @@ import dateparser
 from datetime import datetime, timezone, timedelta
 
 from ics import Calendar, Event
+from ics.grammar.parse import ContentLine
 import os
 
 import subprocess
@@ -132,9 +133,9 @@ def update_calendar(events, calendar_file, calendar_name):
             calendar = Calendar(f.read())
     else:
         calendar = Calendar()
+        calendar.name = calendar_name
+        calendar.extra.append(ContentLine(name="X-WR-CALNAME", value=calendar_name)) # for iCal
 
-    calendar.name = calendar_name
-    calendar.extra.append(f'X-WR-CALNAME:{calendar_name}') # for iCal
 
     existing_events = {event.url for event in calendar.events}
 
@@ -186,4 +187,4 @@ if __name__ == '__main__':
     for org_name, org_data in organisations.items():
         logger.info(f'Scraping {org_data["ical_name"]}...')
         update_calendar(org_data["scrape_function"](), org_data["ical_file"], org_data["ical_name"])
-    git_commit_and_push()
+    #git_commit_and_push()
