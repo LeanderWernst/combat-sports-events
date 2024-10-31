@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 #######################################################################################
 
-locale.setlocale(locale.LC_TIME, 'en_US')
+locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
 
 ## LOGGER
 
