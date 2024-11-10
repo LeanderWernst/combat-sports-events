@@ -1,0 +1,52 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.red {
+  text-decoration: none;
+  color: rgb(207, 27, 3);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.grey {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.ufc {
+  font-family: 'UFC' !important;
+}
+
+.glory {
+  font-family: 'GLORY' !important;
+  text-transform: uppercase;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    /*  place-items: center; */
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 1fr; */
+    padding: 0 2rem;
+  }
+}
