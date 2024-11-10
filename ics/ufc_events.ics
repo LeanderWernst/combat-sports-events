@@ -1,245 +1,246 @@
-BEGIN:VCALENDAR
-X-WR-CALNAME:UFC Events
-VERSION:2.0
-PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DTEND:20240928T230000Z
-LOCATION:Accor Arena\, Paris\, France
-DTSTART:20240928T190000Z
-SUMMARY:UFC Fight Night: Moicano vs Saint Denis - Main-Card
-UID:ccbbb11d-b0a6-4556-90fc-4e4e57afb7a3@ccbb.org
-URL:https://www.ufc.com/event/ufc-fight-night-september-28-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240915T060000Z
-LOCATION:Sphere\, Las Vegas\, NV\, United States
-DTSTART:20240915T020000Z
-SUMMARY:UFC 306: O'Malley vs Dvalishvili - Main-Card
-UID:2f42a30e-c3bc-4ec9-894b-894432195485@2f42.org
-URL:https://www.ufc.com/event/riyadh-season-noche-ufc
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241215T070000Z
-LOCATION:Amalie Arena\, Tampa\, FL\, United States
-DTSTART:20241215T030000Z
-SUMMARY:UFC Fight Night: TBD vs TBD - Main-Card
-UID:612fdceb-ca0e-43d0-a913-fb0c82e85b67@612f.org
-URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241110T040000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241110T000000Z
-SUMMARY:UFC Fight Night: Magny vs Prates - Main-Card
-UID:5f379fbb-4202-4403-81ce-b801fb9db939@5f37.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20250209T030000Z
-LOCATION:Qudos Bank Arena\, Sydney Olympic Park\, NSW\, Australia
-DTSTART:20250209T010000Z
-SUMMARY:UFC 312: TBD vs TBD - Prelims
-UID:4d4b556d-6085-4014-ae8e-ed57f3b3d9ea@4d4b.org
-URL:https://www.ufc.com/event/ufc-312
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240825T020000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20240824T230000Z
-SUMMARY:UFC Fight Night: Cannonier vs Borralho - Prelims
-UID:97b7d3a0-2bc2-42d7-88aa-dae3eafe6435@97b7.org
-URL:https://www.ufc.com/event/ufc-fight-night-august-24-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241020T030000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241019T230000Z
-SUMMARY:UFC Fight Night: Hernandez vs Pereira - Main-Card
-UID:e80587d1-9088-4106-84d1-1a2e1df98cb5@e805.org
-URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241208T030000Z
-LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
-DTSTART:20241208T010000Z
-SUMMARY:UFC 310: Muhammad vs Rakhmonov - Prelims
-UID:fee3e64c-a6e7-4b74-a014-ad40d105291a@fee3.org
-URL:https://www.ufc.com/event/ufc-310
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240908T030000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20240907T230000Z
-SUMMARY:UFC Fight Night: Burns vs Brady - Main-Card
-UID:50bb7b3c-490e-4739-97bd-6855c9068b12@50bb.org
-URL:https://www.ufc.com/event/ufc-fight-night-september-07-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240907T230000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20240907T200000Z
-SUMMARY:UFC Fight Night: Burns vs Brady - Prelims
-UID:bc9ecd68-d061-4cb2-8148-7c4e5708af3e@bc9e.org
-URL:https://www.ufc.com/event/ufc-fight-night-september-07-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241026T180000Z
-LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
-DTSTART:20241026T140000Z
-SUMMARY:UFC 308: Topuria vs Holloway - Prelims
-UID:d7eec75d-4347-4fbf-913b-03a42c1ad1b4@d7ee.org
-URL:https://www.ufc.com/event/ufc-308
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240915T020000Z
-LOCATION:Sphere\, Las Vegas\, NV\, United States
-DTSTART:20240915T000000Z
-SUMMARY:UFC 306: O'Malley vs Dvalishvili - Prelims
-UID:82cad437-686b-43e9-805c-35ce3a4b7b00@82ca.org
-URL:https://www.ufc.com/event/riyadh-season-noche-ufc
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241026T220000Z
-LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
-DTSTART:20241026T180000Z
-SUMMARY:UFC 308: Topuria vs Holloway - Main-Card
-UID:58dd2199-4e73-48d1-8d6c-5a4131f91806@58dd.org
-URL:https://www.ufc.com/event/ufc-308
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241215T030000Z
-LOCATION:Amalie Arena\, Tampa\, FL\, United States
-DTSTART:20241215T000000Z
-SUMMARY:UFC Fight Night: TBD vs TBD - Prelims
-UID:74bcbad9-e6ef-44a1-8daf-413facbf8fe5@74bc.org
-URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241013T030000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241012T230000Z
-SUMMARY:UFC Fight Night: Royval vs Taira - Main-Card
-UID:18593ce2-ee91-4d18-8f04-cf862b162b45@1859.org
-URL:https://www.ufc.com/event/ufc-fight-night-october-12-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241117T070000Z
-LOCATION:Madison Square Garden\, New York\, NY\, United States
-DTSTART:20241117T030000Z
-SUMMARY:UFC 309: Jones vs Miocic - Main-Card
-UID:65ae1a24-31ba-407a-8304-a7a87bf2c3fc@65ae.org
-URL:https://www.ufc.com/event/ufc-309
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240928T190000Z
-LOCATION:Accor Arena\, Paris\, France
-DTSTART:20240928T160000Z
-SUMMARY:UFC Fight Night: Moicano vs Saint Denis - Prelims
-UID:1998638b-523d-47dc-80e8-29c7f286e506@1998.org
-URL:https://www.ufc.com/event/ufc-fight-night-september-28-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20240825T060000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20240825T020000Z
-SUMMARY:UFC Fight Night: Cannonier vs Borralho - Main-Card
-UID:7f6d85a4-27d9-40ac-b591-c422ea0f3730@7f6d.org
-URL:https://www.ufc.com/event/ufc-fight-night-august-24-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241006T060000Z
-LOCATION:Delta Center\, Salt Lake City\, UT\, United States
-DTSTART:20241006T020000Z
-SUMMARY:UFC 307: Pereira vs Rountree Jr. - Main-Card
-UID:06101aef-c342-4c1d-947f-5382b0b71c7d@0610.org
-URL:https://www.ufc.com/event/ufc-307
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241019T230000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241019T200000Z
-SUMMARY:UFC Fight Night: Hernandez vs Pereira - Prelims
-UID:585cd9f3-d000-4c82-a37c-a8c63b743201@585c.org
-URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20250209T070000Z
-LOCATION:Qudos Bank Arena\, Sydney Olympic Park\, NSW\, Australia
-DTSTART:20250209T030000Z
-SUMMARY:UFC 312: TBD vs TBD - Main-Card
-UID:3a55ab84-2d91-4518-a854-a7ebfabd89f0@3a55.org
-URL:https://www.ufc.com/event/ufc-312
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241208T070000Z
-LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
-DTSTART:20241208T030000Z
-SUMMARY:UFC 310: Muhammad vs Rakhmonov - Main-Card
-UID:8ff4f397-645e-41b3-a1bd-cf8fdff57081@8ff4.org
-URL:https://www.ufc.com/event/ufc-310
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241103T040000Z
-LOCATION:Rogers Place\, Edmonton\, AB\, Canada
-DTSTART:20241103T000000Z
-SUMMARY:UFC Fight Night: Moreno vs Albazi - Main-Card
-UID:b67c7218-9813-4e2b-9bb3-3c2b979b01cb@b67c.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241117T030000Z
-LOCATION:Madison Square Garden\, New York\, NY\, United States
-DTSTART:20241117T010000Z
-SUMMARY:UFC 309: Jones vs Miocic - Prelims
-UID:11dd9190-f3d1-4f37-a0fe-dfe2fee91632@11dd.org
-URL:https://www.ufc.com/event/ufc-309
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241012T230000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241012T200000Z
-SUMMARY:UFC Fight Night: Royval vs Taira - Prelims
-UID:53648fb1-e6e3-438e-90fa-5d624b5f18cc@5364.org
-URL:https://www.ufc.com/event/ufc-fight-night-october-12-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241123T150000Z
-LOCATION:Galaxy Arena\, Macao SAR China
-DTSTART:20241123T110000Z
-SUMMARY:UFC Fight Night: Yan vs Figueiredo - Main-Card
-UID:5cc26c04-5d2b-4ec9-ab8d-7fcde494e8b8@5cc2.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241123T110000Z
-LOCATION:Galaxy Arena\, Macao SAR China
-DTSTART:20241123T080000Z
-SUMMARY:UFC Fight Night: Yan vs Figueiredo - Prelims
-UID:2fa7b3f7-d9fc-4499-af9d-661b01927480@2fa7.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241110T000000Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241109T090000Z
-SUMMARY:UFC Fight Night: Magny vs Prates - Prelims
-UID:80a38f33-4763-47d7-9301-5ebc0802571f@80a3.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241006T020000Z
-LOCATION:Delta Center\, Salt Lake City\, UT\, United States
-DTSTART:20241006T000000Z
-SUMMARY:UFC 307: Pereira vs Rountree Jr. - Prelims
-UID:beadfee6-d8ab-4a90-a7ce-71acaceb495b@bead.org
-URL:https://www.ufc.com/event/ufc-307
-END:VEVENT
-BEGIN:VEVENT
-DTEND:20241103T000000Z
-LOCATION:Rogers Place\, Edmonton\, AB\, Canada
-DTSTART:20241102T210000Z
-SUMMARY:UFC Fight Night: Moreno vs Albazi - Prelims
-UID:bf18718d-8dbc-4ac8-8fd0-87d57e255266@bf18.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024
-END:VEVENT
+BEGIN:VCALENDAR
+X-WR-CALNAME:UFC Events
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+CALSCALE:GEORGIAN
+BEGIN:VEVENT
+DTEND:20240928T230000Z
+LOCATION:Accor Arena\, Paris\, France
+DTSTART:20240928T190000Z
+SUMMARY:UFC Fight Night: Moicano vs Saint Denis - Main-Card
+UID:ccbbb11d-b0a6-4556-90fc-4e4e57afb7a3@ccbb.org
+URL:https://www.ufc.com/event/ufc-fight-night-september-28-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240915T060000Z
+LOCATION:Sphere\, Las Vegas\, NV\, United States
+DTSTART:20240915T020000Z
+SUMMARY:UFC 306: O'Malley vs Dvalishvili - Main-Card
+UID:2f42a30e-c3bc-4ec9-894b-894432195485@2f42.org
+URL:https://www.ufc.com/event/riyadh-season-noche-ufc
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241215T070000Z
+LOCATION:Amalie Arena\, Tampa\, FL\, United States
+DTSTART:20241215T030000Z
+SUMMARY:UFC Fight Night: TBD vs TBD - Main-Card
+UID:612fdceb-ca0e-43d0-a913-fb0c82e85b67@612f.org
+URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241110T040000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241110T000000Z
+SUMMARY:UFC Fight Night: Magny vs Prates - Main-Card
+UID:5f379fbb-4202-4403-81ce-b801fb9db939@5f37.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250209T030000Z
+LOCATION:Qudos Bank Arena\, Sydney Olympic Park\, NSW\, Australia
+DTSTART:20250209T010000Z
+SUMMARY:UFC 312: TBD vs TBD - Prelims
+UID:4d4b556d-6085-4014-ae8e-ed57f3b3d9ea@4d4b.org
+URL:https://www.ufc.com/event/ufc-312
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240825T020000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20240824T230000Z
+SUMMARY:UFC Fight Night: Cannonier vs Borralho - Prelims
+UID:97b7d3a0-2bc2-42d7-88aa-dae3eafe6435@97b7.org
+URL:https://www.ufc.com/event/ufc-fight-night-august-24-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241020T030000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241019T230000Z
+SUMMARY:UFC Fight Night: Hernandez vs Pereira - Main-Card
+UID:e80587d1-9088-4106-84d1-1a2e1df98cb5@e805.org
+URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241208T030000Z
+LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
+DTSTART:20241208T010000Z
+SUMMARY:UFC 310: Muhammad vs Rakhmonov - Prelims
+UID:fee3e64c-a6e7-4b74-a014-ad40d105291a@fee3.org
+URL:https://www.ufc.com/event/ufc-310
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240908T030000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20240907T230000Z
+SUMMARY:UFC Fight Night: Burns vs Brady - Main-Card
+UID:50bb7b3c-490e-4739-97bd-6855c9068b12@50bb.org
+URL:https://www.ufc.com/event/ufc-fight-night-september-07-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240907T230000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20240907T200000Z
+SUMMARY:UFC Fight Night: Burns vs Brady - Prelims
+UID:bc9ecd68-d061-4cb2-8148-7c4e5708af3e@bc9e.org
+URL:https://www.ufc.com/event/ufc-fight-night-september-07-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241026T180000Z
+LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
+DTSTART:20241026T140000Z
+SUMMARY:UFC 308: Topuria vs Holloway - Prelims
+UID:d7eec75d-4347-4fbf-913b-03a42c1ad1b4@d7ee.org
+URL:https://www.ufc.com/event/ufc-308
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240915T020000Z
+LOCATION:Sphere\, Las Vegas\, NV\, United States
+DTSTART:20240915T000000Z
+SUMMARY:UFC 306: O'Malley vs Dvalishvili - Prelims
+UID:82cad437-686b-43e9-805c-35ce3a4b7b00@82ca.org
+URL:https://www.ufc.com/event/riyadh-season-noche-ufc
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241026T220000Z
+LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
+DTSTART:20241026T180000Z
+SUMMARY:UFC 308: Topuria vs Holloway - Main-Card
+UID:58dd2199-4e73-48d1-8d6c-5a4131f91806@58dd.org
+URL:https://www.ufc.com/event/ufc-308
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241215T030000Z
+LOCATION:Amalie Arena\, Tampa\, FL\, United States
+DTSTART:20241215T000000Z
+SUMMARY:UFC Fight Night: TBD vs TBD - Prelims
+UID:74bcbad9-e6ef-44a1-8daf-413facbf8fe5@74bc.org
+URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241013T030000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241012T230000Z
+SUMMARY:UFC Fight Night: Royval vs Taira - Main-Card
+UID:18593ce2-ee91-4d18-8f04-cf862b162b45@1859.org
+URL:https://www.ufc.com/event/ufc-fight-night-october-12-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241117T070000Z
+LOCATION:Madison Square Garden\, New York\, NY\, United States
+DTSTART:20241117T030000Z
+SUMMARY:UFC 309: Jones vs Miocic - Main-Card
+UID:65ae1a24-31ba-407a-8304-a7a87bf2c3fc@65ae.org
+URL:https://www.ufc.com/event/ufc-309
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240928T190000Z
+LOCATION:Accor Arena\, Paris\, France
+DTSTART:20240928T160000Z
+SUMMARY:UFC Fight Night: Moicano vs Saint Denis - Prelims
+UID:1998638b-523d-47dc-80e8-29c7f286e506@1998.org
+URL:https://www.ufc.com/event/ufc-fight-night-september-28-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20240825T060000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20240825T020000Z
+SUMMARY:UFC Fight Night: Cannonier vs Borralho - Main-Card
+UID:7f6d85a4-27d9-40ac-b591-c422ea0f3730@7f6d.org
+URL:https://www.ufc.com/event/ufc-fight-night-august-24-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241006T060000Z
+LOCATION:Delta Center\, Salt Lake City\, UT\, United States
+DTSTART:20241006T020000Z
+SUMMARY:UFC 307: Pereira vs Rountree Jr. - Main-Card
+UID:06101aef-c342-4c1d-947f-5382b0b71c7d@0610.org
+URL:https://www.ufc.com/event/ufc-307
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241019T230000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241019T200000Z
+SUMMARY:UFC Fight Night: Hernandez vs Pereira - Prelims
+UID:585cd9f3-d000-4c82-a37c-a8c63b743201@585c.org
+URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20250209T070000Z
+LOCATION:Qudos Bank Arena\, Sydney Olympic Park\, NSW\, Australia
+DTSTART:20250209T030000Z
+SUMMARY:UFC 312: TBD vs TBD - Main-Card
+UID:3a55ab84-2d91-4518-a854-a7ebfabd89f0@3a55.org
+URL:https://www.ufc.com/event/ufc-312
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241208T070000Z
+LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
+DTSTART:20241208T030000Z
+SUMMARY:UFC 310: Muhammad vs Rakhmonov - Main-Card
+UID:8ff4f397-645e-41b3-a1bd-cf8fdff57081@8ff4.org
+URL:https://www.ufc.com/event/ufc-310
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241103T040000Z
+LOCATION:Rogers Place\, Edmonton\, AB\, Canada
+DTSTART:20241103T000000Z
+SUMMARY:UFC Fight Night: Moreno vs Albazi - Main-Card
+UID:b67c7218-9813-4e2b-9bb3-3c2b979b01cb@b67c.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241117T030000Z
+LOCATION:Madison Square Garden\, New York\, NY\, United States
+DTSTART:20241117T010000Z
+SUMMARY:UFC 309: Jones vs Miocic - Prelims
+UID:11dd9190-f3d1-4f37-a0fe-dfe2fee91632@11dd.org
+URL:https://www.ufc.com/event/ufc-309
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241012T230000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241012T200000Z
+SUMMARY:UFC Fight Night: Royval vs Taira - Prelims
+UID:53648fb1-e6e3-438e-90fa-5d624b5f18cc@5364.org
+URL:https://www.ufc.com/event/ufc-fight-night-october-12-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241123T150000Z
+LOCATION:Galaxy Arena\, Macao SAR China
+DTSTART:20241123T110000Z
+SUMMARY:UFC Fight Night: Yan vs Figueiredo - Main-Card
+UID:5cc26c04-5d2b-4ec9-ab8d-7fcde494e8b8@5cc2.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241123T110000Z
+LOCATION:Galaxy Arena\, Macao SAR China
+DTSTART:20241123T080000Z
+SUMMARY:UFC Fight Night: Yan vs Figueiredo - Prelims
+UID:2fa7b3f7-d9fc-4499-af9d-661b01927480@2fa7.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241110T000000Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241109T090000Z
+SUMMARY:UFC Fight Night: Magny vs Prates - Prelims
+UID:80a38f33-4763-47d7-9301-5ebc0802571f@80a3.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241006T020000Z
+LOCATION:Delta Center\, Salt Lake City\, UT\, United States
+DTSTART:20241006T000000Z
+SUMMARY:UFC 307: Pereira vs Rountree Jr. - Prelims
+UID:beadfee6-d8ab-4a90-a7ce-71acaceb495b@bead.org
+URL:https://www.ufc.com/event/ufc-307
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20241103T000000Z
+LOCATION:Rogers Place\, Edmonton\, AB\, Canada
+DTSTART:20241102T210000Z
+SUMMARY:UFC Fight Night: Moreno vs Albazi - Prelims
+UID:bf18718d-8dbc-4ac8-8fd0-87d57e255266@bf18.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024
+END:VEVENT
 END:VCALENDAR
