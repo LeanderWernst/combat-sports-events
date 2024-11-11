@@ -3,3 +3,5 @@ beautifulsoup4
 dateparser
 ics
 python-dotenv
+selenium
+webdriver-manager

@@ -3,6 +3,15 @@ from logging.handlers import RotatingFileHandler
 
 import requests
 from bs4 import BeautifulSoup
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+import time
 import locale
 import re
 
@@ -15,7 +24,6 @@ import os
 
 import subprocess
 from dotenv import load_dotenv
-
 #######################################################################################
 
 locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
@@ -41,9 +49,112 @@ load_dotenv()
 token = os.getenv("GITHUB_TOKEN")
 repo_url = f"https://{token}@github.com/LeanderWernst/combat-sports-event-scraper.git"
 
+## SELENIUM WEBDRIVER
+options = webdriver.ChromeOptions()
+options.add_argument("--headless")
+options.add_argument("--disable-gpu")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
 #######################################################################################
 
-# TODO: Get description and location
+# TODO: Use selenium
+def scrape_glory():
+    config = {
+        "headers": {
+            "Accept-Language": "en",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        },
+        "duration": 3,
+        "base_domain": "https://glorykickboxing.com",
+        "scrape_domain": "https://glorykickboxing.com/events"
+    }
+
+    events = []
+
+    try:       
+        driver.get(config["scrape_domain"])
+        WebDriverWait(driver, 10).until(
+            lambda d: d.execute_script("return document.readyState") == "complete"
+        )
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'a[href^="/events/"]'))
+        )
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
+        #event_cards = soup.find_all('div', class_=['card', 'gold', 'event-card'])
+        a_event_links = soup.find_all('a', href=re.compile(r'^/events/'))
+        event_links = { link['href'] for link in a_event_links }
+        print(event_links)
+
+        for link in event_links:
+            driver.get(config["base_domain"] + link)
+            element = WebDriverWait(driver, 10).until(
+                lambda d: d.find_elements(By.CSS_SELECTOR, 'div[class="info"]') or 
+                          d.find_elements(By.CSS_SELECTOR, 'div[class="bar longAgo info-bar"]')
+            )
+            has_info_div = element[0].get_attribute('class') == "info" if element else False
+
+            soup = BeautifulSoup(driver.page_source, 'html.parser')
+            event_title = soup.find('title').text
+            # event_name = soup.find('meta', property="og:title")["content"]
+            event_description = soup.find('meta', property="og:description")["content"]
+            print(link, soup)
+            start_prelims_utc, start_main_utc, location = "", "", ""
+            if has_info_div:
+                location = soup.find('span', class_="location-top").text.strip()
+                div_info = soup.find('div', class_="info")
+                start_main = div_info.find('span').text.strip()
+                date_split = re.split(r'(\d{4})', start_main)
+                date = date_split[0] + " " + date_split[1]
+                start_main_utc = dateparser.parse(start_main).astimezone(timezone.utc).isoformat()
+                start_prelims = div_info.find('span', string=re.compile(r'Prelims')).text.strip().replace('Prelims', '') if div_info.find('span', string=re.compile(r'Prelims')) else None
+                start_prelims_utc = dateparser.parse(date + start_prelims).astimezone(timezone.utc).isoformat() if start_prelims else None
+                end_main_utc = (dateparser.parse(start_main).astimezone(timezone.utc) + timedelta(hours=config["duration"])).isoformat()
+            else:
+                print(link)
+                location = soup.find('span', class_="location-large").text.strip()
+                date = soup.find('div', class_="large live clock").find('label').text.strip()
+                h3s_main_card = soup.find_all('h3')
+                start_main = None
+                for h3 in h3s_main_card:
+                    if 'Main' in h3.text.strip():
+                        main_text = h3.text.strip()
+                    elif 'Prelims' in h3.text.strip():
+                        prelims_text = h3.text.strip()
+                start_main = main_text.replace('Main cardLive at ', '')
+                start_main_utc = dateparser.parse(date + " " + start_main).astimezone(timezone.utc).isoformat()
+                start_prelims = prelims_text.replace('PrelimsLive at ', '') if prelims_text else None
+                start_prelims_utc = dateparser.parse(date + " " + start_prelims).astimezone(timezone.utc).isoformat()
+                end_main_utc = (dateparser.parse(start_main).astimezone(timezone.utc) + timedelta(hours=config["duration"])).isoformat()
+
+                if start_prelims:
+                    prelims = {
+                            "name": event_title,
+                            "begin": start_prelims_utc,
+                            "end": start_main_utc,
+                            "location": location,
+                            "description": event_description ,
+                            "url": config["base_domain"] + link
+                    }
+                    events.append(prelims)
+                main = {
+                        "name": event_title,
+                        "begin": start_main_utc,
+                        "end": end_main_utc,
+                        "location": location,
+                        "description": event_description ,
+                        "url": config["base_domain"] + link
+                }
+                events.append(main)
+        print(events)
+
+    finally:
+        driver.quit()
+
+
+
+
 def scrape_ufc():
     config = {
         "headers": {
@@ -110,9 +221,10 @@ def scrape_ufc():
                 event_begin_utc = parsed_begin_date.astimezone(timezone.utc).isoformat() if parsed_begin_date else None
                 
                 if section == "Main-Card":
-                    main_card_begin = event_begin_utc
-
-                event_end_utc = main_card_begin if section == "Prelims" and main_card_begin else (parsed_begin_date + timedelta(hours=config["duration"])).astimezone(timezone.utc).isoformat()
+                    event_end_utc = (parsed_begin_date + timedelta(hours=config["duration"])).astimezone(timezone.utc).isoformat()
+                    main_card_begin = parsed_begin_date
+                elif section == "Prelims" and main_card_begin:
+                    event_end_utc = main_card_begin.isoformat()
 
                 event = {
                     "name": event_name + " - " + section,
@@ -174,6 +286,11 @@ organisations = {
         "scrape_function": scrape_ufc,
         "ical_file": "ufc_events.ics",
         "ical_name": "UFC Events"
+    },
+    "glory": {
+        "scrape_function": scrape_glory,
+        "ical_file": "glory_events.ics",
+        "ical_name": "Glory Events"
     }
 }
 
