@@ -37,7 +37,7 @@ const loadICS = async (file: string) => {
         const parsedEvents = Object.values(jcalData)
             .filter((event: any) => event.type === 'VEVENT')
             .map((event: any) => ({
-                org: event.summary.toString().split(' ')[0],
+                org: file.split('_')[0], //event.summary.toString().split(' ')[0],
                 summary: event.summary || `No Title found (${Math.random()})`,
                 start: new Date(event.start),
                 end: new Date(event.end),
