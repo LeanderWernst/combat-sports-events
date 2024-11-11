@@ -4,7 +4,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 200;
-  src: url('./fonts/oswald-v53-latin-200.woff2') format('woff2');
+  src: url('/fonts/oswald-v53-latin-200.woff2') format('woff2');
 }
 
 /* oswald-300 - latin */
@@ -13,7 +13,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 300;
-  src: url('./fonts/oswald-v53-latin-300.woff2') format('woff2');
+  src: url('/fonts/oswald-v53-latin-300.woff2') format('woff2');
 }
 
 /* oswald-regular - latin */
@@ -22,7 +22,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/oswald-v53-latin-regular.woff2') format('woff2');
+  src: url('/fonts/oswald-v53-latin-regular.woff2') format('woff2');
 }
 
 /* oswald-500 - latin */
@@ -31,7 +31,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
-  src: url('./fonts/oswald-v53-latin-500.woff2') format('woff2');
+  src: url('/fonts/oswald-v53-latin-500.woff2') format('woff2');
 }
 
 /* oswald-600 - latin */
@@ -40,7 +40,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 600;
-  src: url('./fonts/oswald-v53-latin-600.woff2') format('woff2');
+  src: url('/fonts/oswald-v53-latin-600.woff2') format('woff2');
 }
 
 /* oswald-700 - latin */
@@ -49,21 +49,21 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/oswald-v53-latin-700.woff2') format('woff2');
+  src: url('/fonts/oswald-v53-latin-700.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
   font-family: 'UFC';
   font-style: normal;
-  src: url('./fonts/dream-mma.woff2') format('woff2');
+  src: url('/fonts/dream-mma.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
   font-family: 'GLORY';
   font-style: normal;
-  src: url('./fonts/good-timing.woff2') format('woff2');
+  src: url('/fonts/good-timing.woff2') format('woff2');
 }
 
 /* color palette from <https://github.com/vuejs/theme> */

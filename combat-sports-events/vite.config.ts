@@ -17,5 +17,17 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  // base: '', // TODO: if nec. define path for hosting in subdir
+  build: {
+    rollupOptions: {
+      external: ['**/ics/**']
+    },
+    minify: 'esbuild',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      }
+    }
+  },
+  base: '/combat-sports-events/',
 })
