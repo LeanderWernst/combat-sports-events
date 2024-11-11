@@ -147,7 +147,9 @@ def scrape_glory():
                         "url": config["base_domain"] + link
                 }
                 events.append(main)
-        print(events)
+        events = sorted(events, key=lambda event: event["begin"], reverse=True)
+        logger.info(f'Success!')
+        return events
 
     finally:
         driver.quit()
