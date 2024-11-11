@@ -2,6 +2,7 @@ BEGIN:VCALENDAR
 X-WR-CALNAME:Glory Events
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+CALSCALE:GEORGIAN
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
 DTEND:20241111T220000Z
@@ -10,6 +11,15 @@ DTSTART:20240921T190000Z
 SUMMARY:GLORY 95 - GLORY Kickboxing
 UID:8cdaa844-3cf1-465b-aa2b-b4e6d45bacc3@8cda.org
 URL:https://glorykickboxing.com/events/glory-95
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241221T100000Z
+LOCATION:Makuhari Messe Chiba
+DTSTART:20241221T070000Z
+SUMMARY:GLORY 97 : FEATHERWEIGHT GRAND PRIX - GLORY Kickboxing - Main Card
+UID:ff879708-bd73-414e-bfcf-437ccb60010d@ff87.org
+URL:https://glorykickboxing.com/events/glory-x-rise-featherweight-grand-prix
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
@@ -31,12 +41,30 @@ URL:https://glorykickboxing.com/events/glory-93
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T180000Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T160000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Prelims
+UID:4d3cef57-960e-45f6-b610-bb1021de7cf9@4d3c.org
+URL:https://glorykickboxing.com/events/collision-7
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
 DTEND:20241111T203000Z
 LOCATION:Topsportcentrum Rotterdam
 DTSTART:20240720T173000Z
 SUMMARY:GLORY 93 - GLORY Kickboxing
 UID:cdaa5d3c-6a98-4196-bde1-b28bff80a8a8@cdaa.org
 URL:https://glorykickboxing.com/events/glory-93
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T210000Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T180000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Main Card
+UID:6df23dd1-01ed-4191-a1b8-528d73d5beab@6df2.org
+URL:https://glorykickboxing.com/events/collision-7
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
