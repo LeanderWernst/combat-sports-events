@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:Glory Events
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241111T220000Z
+LOCATION:Arena Zagreb
+DTSTART:20240921T190000Z
+SUMMARY:GLORY 95 - GLORY Kickboxing
+UID:8cdaa844-3cf1-465b-aa2b-b4e6d45bacc3@8cda.org
+URL:https://glorykickboxing.com/events/glory-95
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240831T190000Z
+LOCATION:Lotto Arena Antwerp
+DTSTART:20240831T170000Z
+SUMMARY:GLORY 94 - GLORY Kickboxing
+UID:73802957-1801-4405-bedf-33462f2d59eb@7380.org
+URL:https://glorykickboxing.com/events/glory-94
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240720T173000Z
+LOCATION:Topsportcentrum Rotterdam
+DTSTART:20240720T173000Z
+SUMMARY:GLORY 93 - GLORY Kickboxing
+UID:2b4517a2-d1e7-48ab-85f3-ff251d14fb0a@2b45.org
+URL:https://glorykickboxing.com/events/glory-93
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241111T203000Z
+LOCATION:Topsportcentrum Rotterdam
+DTSTART:20240720T173000Z
+SUMMARY:GLORY 93 - GLORY Kickboxing
+UID:cdaa5d3c-6a98-4196-bde1-b28bff80a8a8@cdaa.org
+URL:https://glorykickboxing.com/events/glory-93
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
+DTEND:20241012T190000Z
+LOCATION:RTM Stage Rotterdam
+DTSTART:20241012T170000Z
+SUMMARY:GLORY 96 - GLORY Kickboxing
+UID:5214aa1a-cbd5-44fe-a534-971f81a8e7a4@5214.org
+URL:https://glorykickboxing.com/events/glory-96
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
+DTEND:20241111T220000Z
+LOCATION:RTM Stage Rotterdam
+DTSTART:20241012T190000Z
+SUMMARY:GLORY 96 - GLORY Kickboxing
+UID:f4be3ee8-ac23-4616-94c8-48b79d189bfd@f4be.org
+URL:https://glorykickboxing.com/events/glory-96
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241111T220000Z
+LOCATION:Lotto Arena Antwerp
+DTSTART:20240831T190000Z
+SUMMARY:GLORY 94 - GLORY Kickboxing
+UID:85308f83-231b-4aff-9678-42e685797afd@8530.org
+URL:https://glorykickboxing.com/events/glory-94
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240921T190000Z
+LOCATION:Arena Zagreb
+DTSTART:20240921T170000Z
+SUMMARY:GLORY 95 - GLORY Kickboxing
+UID:cd2c02e6-ab6a-4ef7-bddd-3abcaac70ba1@cd2c.org
+URL:https://glorykickboxing.com/events/glory-95
+END:VEVENT
+END:VCALENDAR
