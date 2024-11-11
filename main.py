@@ -47,7 +47,7 @@ logger.addHandler(handler)
 ## REPO SETTINGS
 load_dotenv()
 token = os.getenv("GITHUB_TOKEN")
-repo_url = f"https://{token}@github.com/LeanderWernst/combat-sports-event-scraper.git"
+repo_url = f"https://{token}@github.com/LeanderWernst/combat-sports-events.git"
 
 ## SELENIUM WEBDRIVER
 options = webdriver.ChromeOptions()
