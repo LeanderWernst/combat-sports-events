@@ -85,7 +85,6 @@ def scrape_glory():
         #event_cards = soup.find_all('div', class_=['card', 'gold', 'event-card'])
         a_event_links = soup.find_all('a', href=re.compile(r'^/events/'))
         event_links = { link['href'] for link in a_event_links }
-        print(event_links)
 
         for link in event_links:
             driver.get(config["base_domain"] + link)
@@ -99,7 +98,6 @@ def scrape_glory():
             event_title = soup.find('title').text
             # event_name = soup.find('meta', property="og:title")["content"]
             event_description = soup.find('meta', property="og:description")["content"]
-            print(link, soup)
             start_prelims_utc, start_main_utc, location = "", "", ""
             if has_info_div:
                 location = soup.find('span', class_="location-top").text.strip()
@@ -112,7 +110,6 @@ def scrape_glory():
                 start_prelims_utc = dateparser.parse(date + start_prelims).astimezone(timezone.utc).isoformat() if start_prelims else None
                 end_main_utc = (dateparser.parse(start_main).astimezone(timezone.utc) + timedelta(hours=config["duration"])).isoformat()
             else:
-                print(link)
                 location = soup.find('span', class_="location-large").text.strip()
                 date = soup.find('div', class_="large live clock").find('label').text.strip()
                 h3s_main_card = soup.find_all('h3')
@@ -128,25 +125,25 @@ def scrape_glory():
                 start_prelims_utc = dateparser.parse(date + " " + start_prelims).astimezone(timezone.utc).isoformat()
                 end_main_utc = (dateparser.parse(start_main).astimezone(timezone.utc) + timedelta(hours=config["duration"])).isoformat()
 
-                if start_prelims:
-                    prelims = {
-                            "name": event_title,
-                            "begin": start_prelims_utc,
-                            "end": start_main_utc,
-                            "location": location,
-                            "description": event_description ,
-                            "url": config["base_domain"] + link
-                    }
-                    events.append(prelims)
-                main = {
-                        "name": event_title,
-                        "begin": start_main_utc,
-                        "end": end_main_utc,
+            if start_prelims:
+                prelims = {
+                        "name": event_title + " - Prelims",
+                        "begin": start_prelims_utc,
+                        "end": start_main_utc,
                         "location": location,
                         "description": event_description ,
                         "url": config["base_domain"] + link
                 }
-                events.append(main)
+                events.append(prelims)
+            main = {
+                    "name": event_title + " - Main Card",
+                    "begin": start_main_utc,
+                    "end": end_main_utc,
+                    "location": location,
+                    "description": event_description ,
+                    "url": config["base_domain"] + link
+            }
+            events.append(main)
         events = sorted(events, key=lambda event: event["begin"], reverse=True)
         logger.info(f'Success!')
         return events
