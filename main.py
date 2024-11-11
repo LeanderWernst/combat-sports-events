@@ -98,17 +98,16 @@ def scrape_glory():
             event_title = soup.find('title').text
             # event_name = soup.find('meta', property="og:title")["content"]
             event_description = soup.find('meta', property="og:description")["content"]
-            start_prelims_utc, start_main_utc, location = "", "", ""
             if has_info_div:
                 location = soup.find('span', class_="location-top").text.strip()
                 div_info = soup.find('div', class_="info")
                 start_main = div_info.find('span').text.strip()
                 date_split = re.split(r'(\d{4})', start_main)
                 date = date_split[0] + " " + date_split[1]
-                start_main_utc = dateparser.parse(start_main).astimezone(timezone.utc).isoformat()
+                start_main_utc = dateparser.parse(start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}).isoformat()
                 start_prelims = div_info.find('span', string=re.compile(r'Prelims')).text.strip().replace('Prelims', '') if div_info.find('span', string=re.compile(r'Prelims')) else None
-                start_prelims_utc = dateparser.parse(date + start_prelims).astimezone(timezone.utc).isoformat() if start_prelims else None
-                end_main_utc = (dateparser.parse(start_main).astimezone(timezone.utc) + timedelta(hours=config["duration"])).isoformat()
+                start_prelims_utc = dateparser.parse(date + start_prelims, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}).isoformat() if start_prelims else None
+                end_main_utc = (dateparser.parse(start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}) + timedelta(hours=config["duration"])).isoformat()
             else:
                 location = soup.find('span', class_="location-large").text.strip()
                 date = soup.find('div', class_="large live clock").find('label').text.strip()
@@ -120,10 +119,10 @@ def scrape_glory():
                     elif 'Prelims' in h3.text.strip():
                         prelims_text = h3.text.strip()
                 start_main = main_text.replace('Main cardLive at ', '')
-                start_main_utc = dateparser.parse(date + " " + start_main).astimezone(timezone.utc).isoformat()
+                start_main_utc = dateparser.parse(date + " " + start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}).isoformat()
                 start_prelims = prelims_text.replace('PrelimsLive at ', '') if prelims_text else None
-                start_prelims_utc = dateparser.parse(date + " " + start_prelims).astimezone(timezone.utc).isoformat()
-                end_main_utc = (dateparser.parse(start_main).astimezone(timezone.utc) + timedelta(hours=config["duration"])).isoformat()
+                start_prelims_utc = dateparser.parse(date + " " + start_prelims, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}).isoformat()
+                end_main_utc = (dateparser.parse(date + " " + start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}) + timedelta(hours=config["duration"])).isoformat()
 
             if start_prelims:
                 prelims = {
