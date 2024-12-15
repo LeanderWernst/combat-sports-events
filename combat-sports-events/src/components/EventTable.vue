@@ -52,13 +52,10 @@ const loadICS = async (file: string) => {
 };
 
 const groupedEvents = computed(() => {
-    const filteredEvents = selectedFilters.value.length > 0
-        ? events.value.filter(event => selectedFilters.value.includes(event.org))
-        : events.value;
-
     const groups = new Map<string, Event[]>();
 
-    filteredEvents.forEach(event => {
+    // Group events by month key
+    events.value.forEach(event => {
         const monthKey = `${event.start.getFullYear()}-${String(event.start.getMonth() + 1).padStart(2, '0')}`;
         if (!groups.has(monthKey)) {
             groups.set(monthKey, []);
@@ -66,12 +63,26 @@ const groupedEvents = computed(() => {
         groups.get(monthKey)?.push(event);
     });
 
-    const sortedGroups = Array.from(groups.entries()).sort(([keyA], [keyB]) => {
+    // Filter events based on selected filters
+    const filteredEvents = selectedFilters.value.length > 0
+        ? events.value.filter(event => selectedFilters.value.includes(event.org))
+        : events.value;
+
+    // Filter events but maintain empty groups
+    const filteredGroups = new Map<string, Event[]>();
+    groups.forEach((groupEvents, monthKey) => {
+        const filteredGroupEvents = groupEvents.filter(event => filteredEvents.includes(event));
+        filteredGroups.set(monthKey, filteredGroupEvents);
+    });
+
+    // Sort the groups by month key
+    const sortedGroups = Array.from(filteredGroups.entries()).sort(([keyA], [keyB]) => {
         return keyA.localeCompare(keyB);
     });
 
     return sortedGroups;
 });
+
 
 const currentMonthIndex = computed(() => {
     const now = new Date();
@@ -88,8 +99,9 @@ const toggleFilter = (promo: string) => {
         if (selectedFilters.value.length == promoList.value.length) {
             selectedFilters.value = []
         }
-    }
-    selectNextUpcomingEvent()
+    }    
+    
+    selectNextUpcomingEvent();
 };
 
 const promoList = computed(() => {
@@ -189,7 +201,7 @@ const prevPage = () => {
     </div>
     <!-- DataTable -->
     <DataTable :value="groupedEvents[currentPage]?.[1] || []" v-model:selection="selectedEvent" selectionMode="single"
-        dataKey="summary" :rows="5" tableStyle="min-width: 1050px" sortField="start" :sortOrder="1">
+        dataKey="summary" tableStyle="min-width: 1050px" sortField="start" :sortOrder="1">
         <!-- Paginator Container -->
         <Column field="org" header="PROMO">
             <template #body="slotProps">
