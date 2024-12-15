@@ -22,6 +22,7 @@ const props = defineProps<{
 
 const events = ref<Event[]>([]);
 const selectedEvent = ref<Event | null>(null);
+const expandedRows = ref([]);
 const currentPage = ref(0);
 const selectedFilters = ref<string[]>([]);
 const hour12 = ref(false);
@@ -192,6 +193,7 @@ const prevPage = () => {
         <Button icon="pi pi-chevron-right" @click="nextPage" :disabled="currentPage === groupedEvents.length - 1" text
             rounded />
     </div>
+
     <!-- Filter Buttons -->
     <div class="">
         <Button label="ALL" icon="pi pi-filter" @click="selectedFilters = []" class="filterButton"
@@ -199,10 +201,13 @@ const prevPage = () => {
         <Button v-for="promo in promoList" icon="pi pi-filter" :key="promo" :label="promo.toLowerCase()" @click="toggleFilter(promo)" class="filterButton"
             :class="{ 'p-button-info': selectedFilters.includes(promo) } + ' ' + promo.toLowerCase()" text />
     </div>
+
     <!-- DataTable -->
-    <DataTable :value="groupedEvents[currentPage]?.[1] || []" v-model:selection="selectedEvent" selectionMode="single"
+    <DataTable :value="groupedEvents[currentPage]?.[1] || []" v-model:selection="selectedEvent" v-model:expandedRows="expandedRows" selectionMode="single"
         dataKey="summary" tableStyle="min-width: 1050px" sortField="start" :sortOrder="1">
+
         <!-- Paginator Container -->
+        <Column expander style="width: 5rem" />
         <Column field="org" header="PROMO">
             <template #body="slotProps">
                 <span :class="slotProps.data.org.toLowerCase()">{{ slotProps.data.org.toLowerCase() }}</span>
@@ -226,6 +231,14 @@ const prevPage = () => {
             </template>
         </Column>
 
+        <!-- Expansion Data -->
+        <template #expansion="{ data }">
+        <div>
+            <h4>{{ data.summary }}</h4>
+            <p>Start: {{ data.start }}</p>
+            <p>End: {{ data.end }}</p>
+        </div>
+    </template>
     </DataTable>
 </template>
 
@@ -238,8 +251,11 @@ const prevPage = () => {
     --p-datatable-body-cell-selected-border-color: #a4131370;
 }
 
-:deep(.p-datatable-column-sorted) {
-    background-color: transparent;
+:deep(.p-datatable-column-sorted),
+:deep(.p-datatable-header-cell),
+:deep(.p-datatable-selectable-row) {
+    background-color: rgba(24, 24, 27, 0.8);
+    border-color: rgba(24, 24, 27, 0.4);
 }
 
 :deep(.p-datatable-tbody > tr.p-datatable-row-selected) {
