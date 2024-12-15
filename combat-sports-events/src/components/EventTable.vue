@@ -27,6 +27,10 @@ const selectedFilters = ref<string[]>([]);
 const hour12 = ref(false);
 const darkmode = ref(false);
 
+const groupRowsBy = ["summary", "location", "details"];
+// https://forum.primefaces.org/viewtopic.php?t=73002
+//const multiSortMeta: [{field: 'columnName1', order: 1}, {field: 'columnName2', order: -1}];
+
 const loadICS = async (file: string) => {
     try {
         const response = await fetch(`https://raw.githubusercontent.com/LeanderWernst/combat-sports-event-scraper/refs/heads/main/ics/${file}`);
@@ -38,7 +42,7 @@ const loadICS = async (file: string) => {
             .filter((event: any) => event.type === 'VEVENT')
             .map((event: any) => ({
                 org: file.split('_')[0], //event.summary.toString().split(' ')[0],
-                summary: event.summary || `No Title found (${Math.random()})`,
+                summary: (event.summary).split('-')[0] || `No Title found (${Math.random()})`,
                 start: new Date(event.start),
                 end: new Date(event.end),
                 location: event.location || 'n/a',
@@ -89,15 +93,20 @@ const toggleFilter = (promo: string) => {
             selectedFilters.value = []
         }
     }
-    selectNextUpcomingEvent()
+    //selectNextUpcomingEvent()
 };
 
 const promoList = computed(() => {
     return Array.from(new Set(events.value.map(event => event.org)));
 });
 
+// TODO: Something Wrong with Filter & Selection
 const selectNextUpcomingEvent = () => {
     const now = new Date();
+
+    if (currentPage.value >= groupedEvents.value.length) {
+        currentPage.value = groupedEvents.value.length - 1;
+    }
 
     const currentGroupedEvents = groupedEvents.value[currentPage.value]?.[1] || [];
 
@@ -184,19 +193,23 @@ const prevPage = () => {
     <div class="">
         <Button label="ALL" icon="pi pi-filter" @click="selectedFilters = []" class="filterButton"
             :class="{ 'p-button-info': selectedFilters.length === 0 }" text />
-        <Button v-for="promo in promoList" icon="pi pi-filter" :key="promo" :label="promo.toLowerCase()" @click="toggleFilter(promo)" class="filterButton"
-            :class="{ 'p-button-info': selectedFilters.includes(promo) } + ' ' + promo.toLowerCase()" text />
+        <Button v-for="promo in promoList" icon="pi pi-filter" :key="promo" :label="promo.toLowerCase()"
+            @click="toggleFilter(promo)" class="filterButton" :class="[
+                { 'p-button-info': selectedFilters.includes(promo) || selectedFilters.length === 0 },
+                promo.toLowerCase()
+            ]" text />
     </div>
     <!-- DataTable -->
     <DataTable :value="groupedEvents[currentPage]?.[1] || []" v-model:selection="selectedEvent" selectionMode="single"
-        dataKey="summary" :rows="5" tableStyle="min-width: 1050px" sortField="start" :sortOrder="1">
+        dataKey="summary" :rows="5" rowGroupMode="rowspan" :groupRowsBy="groupRowsBy"
+        tableStyle="width: 100%; table-layout: fixed;" sortField="start" :sortOrder="1">
         <!-- Paginator Container -->
-        <Column field="org" header="PROMO">
+        <Column field="org" header="PROMO" style="width:7%">
             <template #body="slotProps">
                 <span :class="slotProps.data.org.toLowerCase()">{{ slotProps.data.org.toLowerCase() }}</span>
             </template>
         </Column>
-        <Column field="summary" header="EVENT"></Column>
+        <Column field="summary" header="EVENT" style="width:30%"></Column>
         <Column field="start" header="BEGIN">
             <template #body="slotProps">
                 {{ formatDateTime(slotProps.data.start) }}
@@ -208,16 +221,19 @@ const prevPage = () => {
             </template>
         </Column>
         <Column field="location" header="LOCATION"></Column>
-        <Column field="details" header="DETAILS">
+        <Column field="details" header="DETAILS" style="width:7%">
             <template #body="slotProps">
                 <a :href="slotProps.data.details" target="_blank">DETAILS</a>
             </template>
         </Column>
-
     </DataTable>
 </template>
 
 <style scoped>
+:deep(.p-datatable-tbody > tr) {
+    height: 50px;
+}
+
 .filterButton {
     min-width: 75px;
 }
