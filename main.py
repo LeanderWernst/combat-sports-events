@@ -428,7 +428,7 @@ def git_commit_and_push():
             return
         
         # Commit and push changes
-        subprocess.run(["git", "commit", "-m", "AUTO: update ics files"], check=True)
+        subprocess.run(["git", "commit", "-m", "AUTO: update ics and json files"], check=True)
         subprocess.run(["git", "push", repo_url], check=True)
         logger.info("Changes successfully committed and pushed to remote.")
     except subprocess.CalledProcessError as e:
