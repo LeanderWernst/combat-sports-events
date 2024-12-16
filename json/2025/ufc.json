@@ -1,0 +1,186 @@
+[
+  {
+    "url": "https://www.ufc.com/event/ufc-313",
+    "organization": "ufc",
+    "title": "UFC 313: TBD vs TBD",
+    "date": "2025-03-09T01:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "T-Mobile Arena, Las Vegas, NV, United States",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-03-09T03:00:00+00:00",
+        "end": "2025-03-09T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-03-09T01:00:00+00:00",
+        "end": "2025-03-09T03:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.982022+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-fight-night-march-01-2025",
+    "organization": "ufc",
+    "title": "UFC Fight Night: TBD vs TBD",
+    "date": "2025-03-01T21:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "UFC APEX, Las Vegas, NV, United States",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-03-02T00:00:00+00:00",
+        "end": "2025-03-02T04:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-03-01T21:00:00+00:00",
+        "end": "2025-03-02T00:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.978923+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-fight-night-february-22-2025",
+    "organization": "ufc",
+    "title": "UFC Fight Night: TBD vs TBD",
+    "date": "2025-02-22T23:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "Climate Pledge Arena, Seattle, WA, United States",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-02-23T02:00:00+00:00",
+        "end": "2025-02-23T06:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-02-22T23:00:00+00:00",
+        "end": "2025-02-23T02:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.976050+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-fight-night-february-15-2025",
+    "organization": "ufc",
+    "title": "UFC Fight Night: TBD vs TBD",
+    "date": "2025-02-15T21:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "UFC APEX, Las Vegas, NV, United States",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-02-16T00:00:00+00:00",
+        "end": "2025-02-16T04:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-02-15T21:00:00+00:00",
+        "end": "2025-02-16T00:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.973174+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-312",
+    "organization": "ufc",
+    "title": "UFC 312: Du Plessis vs Strickland 2",
+    "date": "2025-02-09T01:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "Qudos Bank Arena, Sydney Olympic Park, NSW, Australia",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-02-09T03:00:00+00:00",
+        "end": "2025-02-09T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-02-09T01:00:00+00:00",
+        "end": "2025-02-09T03:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.970272+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-fight-night-february-01-2025",
+    "organization": "ufc",
+    "title": "UFC Fight Night: Adesanya vs Imavov",
+    "date": "2025-02-01T14:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "The Venue, Riyadh, Saudi Arabia",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-02-01T17:00:00+00:00",
+        "end": "2025-02-01T21:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-02-01T14:00:00+00:00",
+        "end": "2025-02-01T17:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.967358+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-311",
+    "organization": "ufc",
+    "title": "UFC 311: Makhachev vs Tsarukyan 2",
+    "date": "2025-01-19T01:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "Intuit Dome, Inglewood, CA, United States",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-01-19T03:00:00+00:00",
+        "end": "2025-01-19T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-01-19T01:00:00+00:00",
+        "end": "2025-01-19T03:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.964455+00:00Z"
+  },
+  {
+    "url": "https://www.ufc.com/event/ufc-fight-night-january-11-2025",
+    "organization": "ufc",
+    "title": "UFC Fight Night: Dern vs Ribas 2",
+    "date": "2025-01-11T21:00:00+00:00",
+    "description": null,
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "UFC APEX, Las Vegas, NV, United States",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-01-12T00:00:00+00:00",
+        "end": "2025-01-12T04:00:00+00:00"
+      },
+      "prelims": {
+        "start": "2025-01-11T21:00:00+00:00",
+        "end": "2025-01-12T00:00:00+00:00"
+      }
+    },
+    "last_updated": "2024-12-16T13:21:34.961303+00:00Z"
+  }
+]

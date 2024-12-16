@@ -2,14 +2,28 @@ BEGIN:VCALENDAR
 X-WR-CALNAME:Glory Events
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+CALSCALE:GEORGIAN
 BEGIN:VEVENT
-DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
-DTEND:20240831T190000Z
-LOCATION:Lotto Arena Antwerp
-DTSTART:20240831T170000Z
-SUMMARY:GLORY 94 - GLORY Kickboxing - Prelims
-UID:ab4b5da4-d939-49dd-9a97-bd7c41e23d20@ab4b.org
-URL:https://glorykickboxing.com/events/glory-94
+X-FIGHTCARD:main_card
+DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
+DTEND:20241012T220000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:RTM Stage Rotterdam
+DTSTART:20241012T190000Z
+SUMMARY:GLORY 96 - GLORY Kickboxing - Main Card
+UID:b0518ff9-8a73-44af-b09e-f34772f06c07@b051.org
+URL:https://glorykickboxing.com/events/glory-96#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
+DTEND:20241012T190000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:RTM Stage Rotterdam
+DTSTART:20241012T170000Z
+SUMMARY:GLORY 96 - GLORY Kickboxing - Preliminaries
+UID:b2717141-dcb0-4743-8188-ee0d096664ed@b271.org
+URL:https://glorykickboxing.com/events/glory-96#prelims
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
@@ -21,31 +35,15 @@ UID:f75d309a-323c-4be6-a20e-a231059af31f@f75d.org
 URL:https://glorykickboxing.com/events/glory-95
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
-DTEND:20241012T190000Z
-LOCATION:RTM Stage Rotterdam
-DTSTART:20241012T170000Z
-SUMMARY:GLORY 96 - GLORY Kickboxing - Prelims
-UID:7e237a69-3888-4218-9a73-52785a5099b1@7e23.org
-URL:https://glorykickboxing.com/events/glory-96
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
-DTEND:20241012T220000Z
-LOCATION:RTM Stage Rotterdam
-DTSTART:20241012T190000Z
-SUMMARY:GLORY 96 - GLORY Kickboxing - Main Card
-UID:edf88eaa-8e8b-4ec8-abd0-83ef84c16cef@edf8.org
-URL:https://glorykickboxing.com/events/glory-96
-END:VEVENT
-BEGIN:VEVENT
+X-FIGHTCARD:main_card
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
-DTEND:20240720T173000Z
-LOCATION:Topsportcentrum Rotterdam
-DTSTART:20240720T173000Z
-SUMMARY:GLORY 93 - GLORY Kickboxing - Prelims
-UID:89fc0de2-7666-4528-bb8b-bba72abe561e@89fc.org
-URL:https://glorykickboxing.com/events/glory-93
+DTEND:20240831T220000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:Lotto Arena Antwerp
+DTSTART:20240831T190000Z
+SUMMARY:GLORY 94 - GLORY Kickboxing - Main Card
+UID:427fc9cb-76d2-4d7c-abaf-35a5a255c306@427f.org
+URL:https://glorykickboxing.com/events/glory-94#main_card
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
@@ -58,21 +56,32 @@ URL:https://glorykickboxing.com/events/glory-95
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
-DTEND:20241207T180000Z
-LOCATION:GelreDome Arnhem
-DTSTART:20241207T160000Z
-SUMMARY:COLLISION 7 - GLORY Kickboxing - Prelims
-UID:1636abb3-cc73-4f01-99f9-3b23a7e7fd65@1636.org
-URL:https://glorykickboxing.com/events/collision-7
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
 DTEND:20241221T100000Z
 LOCATION:Makuhari Messe Chiba
 DTSTART:20241221T070000Z
 SUMMARY:GLORY 97 : FEATHERWEIGHT GRAND PRIX - GLORY Kickboxing - Main Card
 UID:901c0522-8f92-40c8-ae7e-2e07b5e14f85@901c.org
 URL:https://glorykickboxing.com/events/glory-x-rise-featherweight-grand-prix
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T210000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T180000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Main Card
+UID:0ecc060f-50ba-4a5c-a38f-68aac0699fd4@0ecc.org
+URL:https://glorykickboxing.com/events/collision-7#how-to-watch#main_card
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
+DTEND:20241012T220000Z
+LOCATION:RTM Stage Rotterdam
+DTSTART:20241012T190000Z
+SUMMARY:GLORY 96 - GLORY Kickboxing - Main Card
+UID:edf88eaa-8e8b-4ec8-abd0-83ef84c16cef@edf8.org
+URL:https://glorykickboxing.com/events/glory-96
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
@@ -82,6 +91,17 @@ DTSTART:20241207T180000Z
 SUMMARY:COLLISION 7 - GLORY Kickboxing - Main Card
 UID:d242a8d3-5550-48d4-bdfc-412bcd75c523@d242.org
 URL:https://glorykickboxing.com/events/collision-7
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241221T090000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:Makuhari Messe Chiba
+DTSTART:20241221T060000Z
+SUMMARY:GLORY 97 : FEATHERWEIGHT GRAND PRIX - GLORY Kickboxing - Main Card
+UID:45f2aa47-f866-45ef-954c-d86e5c032699@45f2.org
+URL:https://glorykickboxing.com/events/glory-x-rise-featherweight-grand-prix#main_card
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
@@ -100,5 +120,118 @@ DTSTART:20240831T190000Z
 SUMMARY:GLORY 94 - GLORY Kickboxing - Main Card
 UID:e422e75f-0e31-4f2e-bd4e-ed06dd56c8cd@e422.org
 URL:https://glorykickboxing.com/events/glory-94
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T180000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T160000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Preliminaries
+UID:57d27517-91ef-4075-a624-a4c7dc9b33b2@57d2.org
+URL:https://glorykickboxing.com/events/collision-7#how-to-watch#prelims
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240831T190000Z
+LOCATION:Lotto Arena Antwerp
+DTSTART:20240831T170000Z
+SUMMARY:GLORY 94 - GLORY Kickboxing - Prelims
+UID:ab4b5da4-d939-49dd-9a97-bd7c41e23d20@ab4b.org
+URL:https://glorykickboxing.com/events/glory-94
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240720T173000Z
+LOCATION:Topsportcentrum Rotterdam
+DTSTART:20240720T173000Z
+SUMMARY:GLORY 93 - GLORY Kickboxing - Prelims
+UID:89fc0de2-7666-4528-bb8b-bba72abe561e@89fc.org
+URL:https://glorykickboxing.com/events/glory-93
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240918T220000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:Arena Zagreb
+DTSTART:20240918T190000Z
+SUMMARY:GLORY 95 - GLORY Kickboxing - Main Card
+UID:88a2a461-d047-4f3d-b2f5-b0310d59991b@88a2.org
+URL:https://glorykickboxing.com/events/glory-95#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241221T090000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:Makuhari Messe Chiba
+DTSTART:20241221T060000Z
+SUMMARY:GLORY 97 : FEATHERWEIGHT GRAND PRIX - GLORY Kickboxing - Main Card
+UID:0b0b03f9-f031-4ad2-b9d1-4d1b44d566ee@0b0b.org
+URL:https://glorykickboxing.com/events/glory-x-rise-featherweight-grand-prix#how-to-watch#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240918T190000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:Arena Zagreb
+DTSTART:20240918T170000Z
+SUMMARY:GLORY 95 - GLORY Kickboxing - Preliminaries
+UID:a337eedf-cb30-4f8c-aaff-1a053580f3dc@a337.org
+URL:https://glorykickboxing.com/events/glory-95#prelims
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:GLORY returns to RTM Stage on October 12th. This evening will see the first title defense of GLORY Welterweight Champion Chico Kwasi against the GLORY Lightweight Champion Tyjani Beztati in an incredible Champion vs Champion fight.
+DTEND:20241012T190000Z
+LOCATION:RTM Stage Rotterdam
+DTSTART:20241012T170000Z
+SUMMARY:GLORY 96 - GLORY Kickboxing - Prelims
+UID:7e237a69-3888-4218-9a73-52785a5099b1@7e23.org
+URL:https://glorykickboxing.com/events/glory-96
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20240831T190000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:Lotto Arena Antwerp
+DTSTART:20240831T170000Z
+SUMMARY:GLORY 94 - GLORY Kickboxing - Preliminaries
+UID:eb33af0e-7f9c-4ed5-b30b-498c1e2c3a8a@eb33.org
+URL:https://glorykickboxing.com/events/glory-94#prelims
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T180000Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T160000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Prelims
+UID:1636abb3-cc73-4f01-99f9-3b23a7e7fd65@1636.org
+URL:https://glorykickboxing.com/events/collision-7
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T210000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T180000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Main Card
+UID:40cb3f25-e5d5-438f-87f7-9e23eaed8355@40cb.org
+URL:https://glorykickboxing.com/events/collision-7#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DESCRIPTION:The official home of GLORY\, the world's largest kickboxing organization.
+DTEND:20241207T180000Z
+LAST-MODIFIED:20241216T132202Z
+LOCATION:GelreDome Arnhem
+DTSTART:20241207T160000Z
+SUMMARY:COLLISION 7 - GLORY Kickboxing - Preliminaries
+UID:43d9994d-526d-460b-84e5-01815fcefddf@43d9.org
+URL:https://glorykickboxing.com/events/collision-7#prelims
 END:VEVENT
 END:VCALENDAR
