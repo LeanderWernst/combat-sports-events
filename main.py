@@ -127,7 +127,7 @@ def scrape_glory():
                 end_main_utc = (dateparser.parse(date + " " + start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}) + timedelta(hours=config["duration"])).isoformat()
 
             event =  {
-                "url": config["base_domain"] + link,
+                "url": config["base_domain"] + link.split('#')[0],
                 "organization": "glory",
                 "title": event_title,
                 "date": start_main_utc,
