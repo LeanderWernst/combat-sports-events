@@ -14,6 +14,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import locale
 import re
+import json
+from collections import defaultdict
 
 import dateparser
 from datetime import datetime, timezone, timedelta
@@ -23,6 +25,7 @@ from ics.grammar.parse import ContentLine
 import os
 
 import subprocess
+import glob
 from dotenv import load_dotenv
 #######################################################################################
 
@@ -59,7 +62,6 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 
 #######################################################################################
 
-# TODO: Use selenium
 def scrape_glory():
     config = {
         "headers": {
@@ -124,32 +126,99 @@ def scrape_glory():
                 start_prelims_utc = dateparser.parse(date + " " + start_prelims, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}).isoformat()
                 end_main_utc = (dateparser.parse(date + " " + start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}) + timedelta(hours=config["duration"])).isoformat()
 
-            if start_prelims:
-                prelims = {
-                        "name": event_title + " - Prelims",
-                        "begin": start_prelims_utc,
-                        "end": start_main_utc,
-                        "location": location,
-                        "description": event_description ,
-                        "url": config["base_domain"] + link
-                }
-                events.append(prelims)
-            main = {
-                    "name": event_title + " - Main Card",
-                    "begin": start_main_utc,
-                    "end": end_main_utc,
-                    "location": location,
-                    "description": event_description ,
-                    "url": config["base_domain"] + link
+            event =  {
+                "url": config["base_domain"] + link,
+                "organization": "glory",
+                "title": event_title,
+                "date": start_main_utc,
+                "description": event_description,
+                "broadcast": ["triller_tv"],
+                "venue": location,
+                "category": "mma",
+                "cards": {
+                    "main_card": {
+                            "start": start_main_utc,
+                            "end": end_main_utc
+                    },
+                    "prelims": {
+                        "start": start_prelims_utc if start_prelims else None,
+                        "end": start_main_utc if start_prelims else None
+                    }
+                },
+                "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
             }
-            events.append(main)
-        events = sorted(events, key=lambda event: event["begin"], reverse=True)
+            events.append(event)
+        events = sorted(events, key=lambda event: event["date"], reverse=True)
+        save_events(events, 'glory.json')
         logger.info(f'Success!')
         return events
 
     finally:
         driver.quit()
 
+def write_events_to_json(events, filename):
+    """
+    Saves events in /json/{year} and updates existing.
+    
+    Args:
+        events (list): Liste of events
+        filename (str): Filename without path
+    """
+    if not events:
+        logger.info("No events found for saving.")
+        return
+    
+    event_year = datetime.fromisoformat(events[0]["date"]).year
+    dir_path = f"./json/{event_year}"
+    file_path = os.path.join(dir_path, filename)
+    
+    os.makedirs(dir_path, exist_ok=True)
+    
+    existing_events = []
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as file:
+            existing_events = json.load(file)
+
+    events_dict = {event["url"]: event for event in existing_events}
+
+    for new_event in events:
+        url = new_event["url"]
+        if url in events_dict:
+            existing_event = events_dict[url]
+            updated = False
+            for key, value in new_event.items():
+                if key in existing_event and existing_event[key] != value:
+                    existing_event[key] = value
+                    updated = True
+            if updated:
+                logger.info(f"Event updated: {url}")
+        else:
+            events_dict[url] = new_event
+            logger.info(f"Added event: {url}")
+
+    updated_events = list(events_dict.values())
+
+    with open(file_path, "w", encoding="utf-8") as file:
+        json.dump(updated_events, file, indent=2, ensure_ascii=False)
+
+
+def split_events_by_year(events):
+    """
+    Splits a list of events by year and returns a dictionary, where the key is the year and the value is a list of events.
+    """
+    events_by_year = defaultdict(list)
+
+    for event in events:
+        event_date = datetime.fromisoformat(event["date"])
+        event_year = event_date.year
+        events_by_year[event_year].append(event)
+    
+    return events_by_year
+
+def save_events(events, filename):
+    events_by_year = split_events_by_year(events)
+    for year, events_list in events_by_year.items():
+        write_events_to_json(events_list, filename)
 
 
 
@@ -213,31 +282,54 @@ def scrape_ufc():
 
             # Parsing of dates and event creation for each date
             main_card_begin = None
+            main_card_end = None
+            prelims_begin = None
+            prelims_end = None
             for section, timestamp_id in event_dates.items():
                 timestamp = div_fight_dates[timestamp_id]
                 parsed_begin_date = dateparser.parse(timestamp).astimezone(timezone.utc)
                 event_begin_utc = parsed_begin_date.astimezone(timezone.utc).isoformat() if parsed_begin_date else None
                 
                 if section == "Main-Card":
-                    event_end_utc = (parsed_begin_date + timedelta(hours=config["duration"])).astimezone(timezone.utc).isoformat()
-                    main_card_begin = parsed_begin_date
+                    main_card_end = (parsed_begin_date + timedelta(hours=config["duration"])).astimezone(timezone.utc).isoformat()
+                    main_card_begin = parsed_begin_date.isoformat()
                 elif section == "Prelims" and main_card_begin:
-                    event_end_utc = main_card_begin.isoformat()
+                    prelims_end = main_card_begin
+                    prelims_begin = parsed_begin_date.isoformat()
 
-                event = {
-                    "name": event_name + " - " + section,
-                    "begin": event_begin_utc,
-                    "end": event_end_utc,
-                    "location": location,
-                    # "description" ,
-                    "url": event_url
-                }
-                events.append(event)
-        events = sorted(events, key=lambda event: event["begin"], reverse=True)
+            event =  {
+                "url": event_url,
+                "organization": "ufc",
+                "title": event_name,
+                "date": event_begin_utc,
+                "description": None,
+                "broadcast": ["triller_tv"],
+                "venue": location,
+                "category": "mma",
+                "cards": {
+                    "main_card": {
+                            "start": main_card_begin,
+                            "end": main_card_end
+                    },
+                    "prelims": {
+                        "start": prelims_begin if prelims_begin else None,
+                        "end": prelims_end if prelims_end else None
+                    }
+                },
+                "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+            }
+            events.append(event)
+        events = sorted(events, key=lambda event: event["date"], reverse=True)
+        save_events(events, 'ufc.json')
         logger.info(f'Success!')
         return events
 
-# TODO: Check events in existing ics for changes
+def get_custom_ical_property(event, property_name):
+    for line in event.extra:
+        if line.name == property_name:
+            return line.value
+    return None
+
 def update_calendar(events, calendar_file, calendar_name):
     logger.info(f'Updating calendar for {calendar_name}...')
 
@@ -251,29 +343,52 @@ def update_calendar(events, calendar_file, calendar_name):
         calendar.name = calendar_name
         calendar.extra.append(ContentLine(name="X-WR-CALNAME", value=calendar_name)) # for iCal
 
-
-    existing_events = {event.url for event in calendar.events}
+    existing_events = {event.url: event for event in calendar.events}
 
     for event_data in events:
-        event_name = event_data['name']
-        event_begin = datetime.fromisoformat(event_data.get('begin', None))
-        event_end = datetime.fromisoformat(event_data.get('end', None))
-        event_location = event_data.get("location", None)
         event_url = event_data.get("url", None)
-        event_description = event_data.get("description", None)
+        event_name = event_data['title']
+        card_dict = {'prelims': "Preliminaries",'main_card': "Main Card"}
+        for card, card_name in card_dict.items():
+            event_url_card_specific = event_url + "#" + card
+            event_description = event_data.get("description", None)
+            event_location = event_data.get("venue", None)
 
-        if event_url not in existing_events:
-            event = Event()
-            event.name = event_name
-            event.begin = event_begin
-            event.end = event_end
-            event.description = event_description
-            event.location = event_location
-            event.url = event_url
-            calendar.events.add(event)
-        else:
-            # TODO: detect and apply changes
-            break
+            # url in json is valid for prelims and main, so we need to add url id present in events
+            if event_url_card_specific not in existing_events:
+                # Add new events
+                
+                if not event_data['cards'][card]['start']:
+                        continue
+
+                event = Event()
+                event.extra.append(ContentLine(name="X-FIGHTCARD", value=card))
+                event.name = event_name + " - " + card_name
+                event.begin = datetime.fromisoformat(event_data['cards'][card]['start'])
+                event.end = datetime.fromisoformat(event_data['cards'][card]['end'])
+                event.description = event_description
+                event.location = event_location
+                event.last_modified = datetime.now()
+                event.url = event_url_card_specific # for unique urls in events
+                calendar.events.add(event)
+
+            else:
+                # Update existing event if not in past
+                existing_event = existing_events[event_url_card_specific]
+                if not existing_event.begin < datetime.now(timezone.utc):
+                    # name is not equal, since events have additional card info
+                    if event_name not in existing_event.name:
+                        existing_event.name = event_name + " - " + card_dict[get_custom_ical_property(existing_event, 'X-FIGHTCARD')]
+                        existing_event.last_modified = datetime.now(timezone.utc)
+                    for property, value in {
+                        "begin": datetime.fromisoformat(event_data['cards'][get_custom_ical_property(existing_event, 'X-FIGHTCARD')]['start']),
+                        "end": datetime.fromisoformat(event_data['cards'][get_custom_ical_property(existing_event, 'X-FIGHTCARD')]['end']),
+                        "description": event_description,
+                        "location": event_location
+                    }.items():
+                        if getattr(existing_event, property) != value:
+                            setattr(existing_event, property, value)
+                            existing_event.last_modified = datetime.now(timezone.utc)
 
     with open(calendar_path, 'w') as f:
         f.writelines(calendar)
@@ -292,19 +407,53 @@ organisations = {
     }
 }
 
+def git_pull():
+    try:
+        subprocess.run(["git", "pull"], check=True)
+    except subprocess.CalledProcessError as e:
+        logger.error("Error during git pull: Check for merge conflicts.")
+        raise
+
+def git_add_files(pattern):
+    files = glob.glob(pattern, recursive=True)
+    if files:
+        subprocess.run(["git", "add"] + files, check=True)
+
 def git_commit_and_push():
     try:
-        subprocess.run(["git", "add", "ics/*.ics"], check=True)
+        # Check if there are changes
+        result = subprocess.run(["git", "status", "--porcelain"], check=True, stdout=subprocess.PIPE, text=True)
+        if not result.stdout.strip():
+            logger.info("No changes to commit.")
+            return
+        
+        # Commit and push changes
         subprocess.run(["git", "commit", "-m", "AUTO: update ics files"], check=True)
-        subprocess.run(["git", "push", repo_url], check=True)
-        logger.info("Changes successfully commited and pushed to remote.")
-
+        subprocess.run(["git", "push"], check=True)
+        logger.info("Changes successfully committed and pushed to remote.")
     except subprocess.CalledProcessError as e:
-        logger.info("Error executing Git command:", e)
+        logger.error("Error executing Git command:", e)
+        raise
+
+def debug():
+    with open('ics/ufc_events.ics', 'r') as f:
+        calendar = Calendar(f.read())
+    existing_events = {event.url: event for event in calendar.events}
+    # existing_events['https://www.ufc.comhttps://www.ufc.com/event/ufc-313'].extra.append(ContentLine(name="X-FIGHTCARD", value="TEST"))
+    # with open('ics/ufc_events.ics', 'w') as f:
+    #     f.writelines(calendar)
+    print(existing_events['https://www.ufc.comhttps://www.ufc.com/event/ufc-313'].extra)
 
 if __name__ == '__main__':
+    git_pull()
     logger.info("Starting scraping...")
     for org_name, org_data in organisations.items():
-        logger.info(f'Scraping {org_data["ical_name"]}...')
-        update_calendar(org_data["scrape_function"](), org_data["ical_file"], org_data["ical_name"])
+        try:
+            logger.info(f'Scraping {org_data["ical_name"]}...')
+            update_calendar(org_data["scrape_function"](), org_data["ical_file"], org_data["ical_name"])
+        except Exception as e:
+            logger.error(f"Error updating calendar for {org_name}: {e}")
+    git_add_files("ics/**/*.ics")
+    git_add_files("json/**/*.json")
     git_commit_and_push()
+    # debug()
