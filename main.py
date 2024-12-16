@@ -409,7 +409,7 @@ organisations = {
 
 def git_pull():
     try:
-        subprocess.run(["git", "pull"], check=True)
+        subprocess.run(["git", "pull", "--no-edit"], check=True)
     except subprocess.CalledProcessError as e:
         logger.error("Error during git pull: Check for merge conflicts.")
         raise
