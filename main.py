@@ -429,7 +429,7 @@ def git_commit_and_push():
         
         # Commit and push changes
         subprocess.run(["git", "commit", "-m", "AUTO: update ics files"], check=True)
-        subprocess.run(["git", "push"], check=True)
+        subprocess.run(["git", "push", repo_url], check=True)
         logger.info("Changes successfully committed and pushed to remote.")
     except subprocess.CalledProcessError as e:
         logger.error("Error executing Git command:", e)
