@@ -3,11 +3,14 @@ import { ref, computed, onMounted, nextTick, onBeforeUnmount } from 'vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Button from 'primevue/button';
+import Popover from 'primevue/popover';
+import Checkbox from 'primevue/checkbox';
+import Menu from 'primevue/menu';
 import ical from 'ical';
 import 'primeicons/primeicons.css';
 import { FilterMatchMode } from '@primevue/core/api';
 
-interface Event {
+interface CombatEvent {
   url: string;
   organization: string;
   title: string;
@@ -35,14 +38,32 @@ const props = defineProps<{
     years: number[]
 }>();
 
-const events = ref<Event[]>([]);
-const selectedEvent = ref<Event | null>(null);
-const expandedRows = ref<Event[]>([]);
+const events = ref<CombatEvent[]>([]);
+const selectedEvent = ref<CombatEvent | null>(null);
+const expandedRows = ref<CombatEvent[]>([]);
 const currentPage = ref(0);
 const selectedFilters = ref<string[]>([]);
+const filterPopover = ref();
+const allSelected = ref(false);
 const hour12 = ref(false);
 const darkmode = ref(false);
 const isSmallScreen = ref(false);
+const menu = ref();
+const items = ref([
+    {
+        label: 'Filter',
+        items: [
+            {
+                label: 'Refresh',
+                icon: 'pi pi-refresh'
+            },
+            {
+                label: 'Export',
+                icon: 'pi pi-upload'
+            }
+        ]
+    }
+]);
 
 const loadJSON = async (file: string) => {
     try {
@@ -77,7 +98,7 @@ const loadJSON = async (file: string) => {
 
 
 const groupedEvents = computed(() => {
-    const groups = new Map<string, Event[]>();
+    const groups = new Map<string, CombatEvent[]>();
 
     // Group events by month key
     events.value.forEach(event => {
@@ -94,7 +115,7 @@ const groupedEvents = computed(() => {
         : events.value;
 
     // Filter events but maintain empty groups
-    const filteredGroups = new Map<string, Event[]>();
+    const filteredGroups = new Map<string, CombatEvent[]>();
     groups.forEach((groupEvents, monthKey) => {
         const filteredGroupEvents = groupEvents.filter(event => filteredEvents.includes(event));
         filteredGroups.set(monthKey, filteredGroupEvents);
@@ -127,6 +148,19 @@ const toggleFilter = (promo: string) => {
     }    
     
     selectNextUpcomingEvent();
+};
+
+const togglePopover = (event: Event) => {
+    filterPopover.value.toggle(event);
+};
+
+// Alle Filter ein-/ausschalten
+const toggleAllFilters = () => {
+    if (allSelected.value) {
+        selectedFilters.value = [...promoList.value];
+    } else {
+        selectedFilters.value = [];
+    }
 };
 
 const promoList = computed(() => {
@@ -197,7 +231,7 @@ function setUniformRowHeight() {
     });
 }
 
-function handleRowSelect(event: Event) {
+function handleRowSelect(event: CombatEvent) {
     selectedEvent.value = event;
 }
 
@@ -228,7 +262,7 @@ const getMonthName = (monthIndex: number) => {
 
 const currentMonthYear = computed(() => {
     const pageIndex = currentPage.value;
-    const eventsArray = groupedEvents.value as [string, Event[]][];
+    const eventsArray = groupedEvents.value as [string, CombatEvent[]][];
 
     const dateParts = eventsArray[pageIndex]?.[0]?.split("-");
 
@@ -264,26 +298,35 @@ const prevPage = () => {
             rounded />
     </div>
 
-    <!-- Filter Buttons -->
-    <div class="">
-        <Button
-            label="ALL"
-            icon="pi pi-filter"
-            @click="selectedFilters = []"
-            class="filterButton"
-            :class="{ 'p-button-info': selectedFilters.length === 0 }"
-            text
-        />
-        <Button
-            v-for="promo in promoList"
-            icon="pi pi-filter"
-            :key="promo"
-            :label="promo.toLowerCase()"
-            @click="toggleFilter(promo)"
-            class="filterButton"
-            :class="{ 'p-button-info': selectedFilters.includes(promo) } + ' ' + promo.toLowerCase()"
-            text
-        />
+    <!-- Filter Button -->
+    <div class="filter-container">
+        
+
+    <!-- Popover Container -->
+    <Popover ref="filterPopover" id="filter_popover">
+        <div class="filter-panel" @click.stop>
+            <h4>SELECT FILTER</h4>
+            <div class="filter-options">
+                <div v-for="promo in promoList" :key="promo" class="filter-option">
+                    <Checkbox 
+                        class="checkbox"
+                        :inputId="promo" 
+                        :value="promo" 
+                        v-model="selectedFilters"
+                    />
+                    <label :for="promo" :class="promo">{{ promo }}</label>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <Button 
+                        icon="pi pi-filter-slash" 
+                        label="RESET" 
+                        @click="toggleAllFilters" 
+                        class="reset-filter"
+                    />
+                </div>
+            </div>
+        </div>
+    </Popover>
     </div>
     <!-- TODO: Implement Button marking next upcoming event -->
     <!-- DataTable -->
@@ -302,7 +345,18 @@ const prevPage = () => {
         scrollHeight="65vh"
     >
         <!-- Paginator Container -->
-        <Column expander style="width: 5rem" />
+        <Column expander style="width: 5rem; text-align: center;" >
+            <template #header >
+                <Button 
+                    type="button"
+                    class="filter-button"
+                    icon="pi pi-filter" 
+                    @click="togglePopover" 
+                    aria-haspopup="true" 
+                    aria-controls="filter_popover" 
+                />
+            </template>
+        </Column>
         <Column field="org" header="PROMO" style="width: 8.5%; min-width: 110px;">
             <template #body="slotProps">
                 <span :class="slotProps.data.organization.toLowerCase()">{{ slotProps.data.organization.toLowerCase() }}</span>
@@ -368,6 +422,44 @@ a {
 
 a:hover {
     background-color: rgba(150, 149, 150, 0.2);
+}
+
+.filter-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-button {
+    border-radius: 25px;
+    background-color: rgb(207, 27, 3);
+    border-color: rgb(207, 27, 3);
+    color: white;
+    margin: 15px;
+}
+
+.reset-filter {
+  background: transparent;
+  border-color: transparent;
+  color: #eb2727;
+}
+
+.reset-filter:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: transparent;
+  color: #d45252;
+}
+
+.checkbox input {
+    border-radius: 25px !important;
 }
 
 :deep(:root) {
