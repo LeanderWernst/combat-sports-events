@@ -320,9 +320,14 @@ const prevPage = () => {
             </template>
         </Column>
         <Column field="venue" header="LOCATION"></Column>
-        <Column field="details" header="DETAILS" style="width:7%">
+        <Column field="details" style="width:6%;">
+            <template #header >
+                <span class="p-datatable-column-title" style="text-align: center;">URL</span>
+            </template>
             <template #body="slotProps">
-                <a :href="slotProps.data.url" target="_blank">DETAILS</a>
+                <a :href="slotProps.data.url" target="_blank" class="p-link">
+                    <i class="pi pi-external-link"></i>
+                </a>
             </template>
         </Column>
 
