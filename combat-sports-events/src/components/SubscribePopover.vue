@@ -2,6 +2,7 @@
 import { ref, defineProps } from 'vue';
 import { InputGroup, InputGroupAddon, InputText, Button, Popover } from 'primevue';
 import 'primeicons/primeicons.css';
+import { useToast } from "primevue/usetoast";
 
 const props = defineProps<{
     file: string;
@@ -13,17 +14,41 @@ const toggle = (event: any) => {
     popover.value.toggle(event);
 }
 const link = ref(`https://raw.githubusercontent.com/LeanderWernst/combat-sports-event-scraper/refs/heads/main/ics/${props.file}`);
+const toast = useToast();
 
 const copyToClipboard = () => {
     if (link.value) {
         navigator.clipboard.writeText(link.value)
-            .then(() => alert("Link copied to clipboard"))
+            .then(() => show("Success", "Link copied to clipboard."))
             .catch(err => console.error("Failed to copy: ", err));
     }
 };
 
-const downloadFile = () => {
-    window.open(link.value);
+const downloadFile = async () => {
+    try {
+        const response = await fetch(link.value);
+        if (!response.ok) throw new Error("File download failed.");
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = promoTitle.toLowerCase() + "_events.ics";
+
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+
+        window.URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error("Error downloading file:", error);
+    }
+};
+
+
+const show = (infoHeadline: string, messageContent: string, lifeMiliseconds: number = 3000) => {
+    toast.add({ severity: 'info', summary: infoHeadline, detail: messageContent, life: lifeMiliseconds });
 };
 </script>
 
