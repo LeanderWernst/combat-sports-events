@@ -252,8 +252,14 @@ const formatDateTime = (date: Date) => {
         hour12: hour12.value
     });
 
-    return `${dateFormatter.format(date)}, ${timeFormatter.format(date)}`;
+    return `${dateFormatter.format(date).replace(",", "")} ${timeFormatter.format(date).replace(",", "")}`;
 };
+
+const formatDateTimeArray = (date: Date) => {
+    if (!date) return ["n/a"];
+
+    return formatDateTime(date).split(" ");
+}
 
 const getMonthName = (monthIndex: number) => {
     const date = new Date(0, monthIndex - 1);
@@ -363,14 +369,22 @@ const prevPage = () => {
             </template>
         </Column>
         <Column field="title" header="EVENT" style="width:25%; min-width: 100px;"></Column>
-        <Column field="start" header="BEGIN" style="width:17%; min-width: 150px;">
+        <Column field="start" header="BEGIN" style="width:13%; min-width: 150px;">
             <template #body="slotProps">
-                {{ formatDateTime(new Date(slotProps.data.cards.main_card.start)) }}
+                <table class="time-info-table">
+                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[0] }}</td>
+                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[1] }}</td>
+                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[2] }}</td>
+                </table>
             </template>
         </Column>
-        <Column field="end" header="END" style="width:17%; min-width: 150px;">
+        <Column field="end" header="END" style="width:13%; min-width: 150px;">
             <template #body="slotProps">
-                {{ formatDateTime(new Date(slotProps.data.cards.main_card.end)) }}
+                <table class="time-info-table">
+                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.end))[0] }}</td>
+                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.end))[1] }}</td>
+                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.end))[2] }}</td>
+                </table>
             </template>
         </Column>
         <Column field="venue" header="LOCATION"></Column>
@@ -460,6 +474,15 @@ a:hover {
 
 .checkbox input {
     border-radius: 25px !important;
+}
+
+table.time-info-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+table.time-info-table td {
+    margin: 0 2px;
 }
 
 :deep(:root) {
