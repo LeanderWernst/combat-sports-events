@@ -3,323 +3,323 @@ X-WR-CALNAME:UFC Events
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20250119T030000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Intuit Dome\, Inglewood\, CA\, United States
-DTSTART:20250119T010000Z
-SUMMARY:UFC 311: Makhachev vs Tsarukyan 2 - Preliminaries
-UID:231e1c32-c5c2-4a91-805e-37c9d253bfbc@231e.org
-URL:https://www.ufc.com/event/ufc-311#prelims
-END:VEVENT
-BEGIN:VEVENT
 X-FIGHTCARD:main_card
-DTEND:20250302T040000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20250302T000000Z
-SUMMARY:UFC Fight Night: TBD vs TBD - Main Card
-UID:98544431-19c3-4560-901e-224138eeb1eb@9854.org
-URL:https://www.ufc.com/event/ufc-fight-night-march-01-2025#main_card
+DTEND:20241026T220000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
+DTSTART:20241026T180000Z
+SUMMARY:UFC 308: Topuria vs Holloway - Main Card
+UID:ca95c3a3-6474-4bc1-b4ca-1c9f51b1f0d7@ca95.org
+URL:https://www.ufc.com/event/ufc-308#main_card
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
-DTEND:20250302T000000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20250301T210000Z
-SUMMARY:UFC Fight Night: TBD vs TBD - Preliminaries
-UID:c8598289-1f2b-4841-97ea-e6158bd01361@c859.org
-URL:https://www.ufc.com/event/ufc-fight-night-march-01-2025#prelims
+DTEND:20241215T030000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Amalie Arena\, Tampa\, FL\, United States
+DTSTART:20241215T000000Z
+SUMMARY:UFC Fight Night: Covington vs Buckley - Preliminaries
+UID:6cdd6e23-0b44-48fb-9215-30db1bd37955@6cdd.org
+URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
-DTEND:20250216T000000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20250215T210000Z
-SUMMARY:UFC Fight Night: Cannonier vs Rodrigues - Preliminaries
-UID:bd2d5c72-48f5-46cb-8793-c2f3b61393d9@bd2d.org
-URL:https://www.ufc.com/event/ufc-fight-night-february-15-2025#prelims
+DTEND:20250201T170000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:The Venue\, Riyadh\, Saudi Arabia
+DTSTART:20250201T140000Z
+SUMMARY:UFC Fight Night: Adesanya vs Imavov - Preliminaries
+UID:d74d1b0c-f258-4175-a951-2dce9af84da3@d74d.org
+URL:https://www.ufc.com/event/ufc-fight-night-february-01-2025#prelims
 END:VEVENT
 BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20250223T060000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Climate Pledge Arena\, Seattle\, WA\, United States
-DTSTART:20250223T020000Z
-SUMMARY:UFC Fight Night: TBD vs TBD - Main Card
-UID:39d45790-446a-49be-9799-b93682f3343d@39d4.org
-URL:https://www.ufc.com/event/ufc-fight-night-february-22-2025#main_card
+X-FIGHTCARD:prelims
+DTEND:20241208T030000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
+DTSTART:20241208T010000Z
+SUMMARY:UFC 310: Pantoja vs Asakura - Preliminaries
+UID:bc4a5053-62a8-49f4-9514-7dbfa2fc2c10@bc4a.org
+URL:https://www.ufc.com/event/ufc-310#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
 DTEND:20241117T030000Z
-LAST-MODIFIED:20241217T001401Z
+LAST-MODIFIED:20241217T002219Z
 LOCATION:Madison Square Garden\, New York\, NY\, United States
 DTSTART:20241117T010000Z
 SUMMARY:UFC 309: Jones vs Miocic - Preliminaries
-UID:0c51869a-8014-40cf-be72-321e795be338@0c51.org
+UID:5e8c1c19-0e58-403f-8a16-2d292f26406e@5e8c.org
 URL:https://www.ufc.com/event/ufc-309#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241103T040000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Rogers Place\, Edmonton\, AB\, Canada
+DTSTART:20241103T000000Z
+SUMMARY:UFC Fight Night: Moreno vs Albazi - Main Card
+UID:ef8adf4e-2452-45e9-938e-56d699143ef7@ef8a.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20250112T000000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20250111T210000Z
+SUMMARY:UFC Fight Night: Dern vs Ribas 2 - Preliminaries
+UID:63c11bb1-87cd-4eea-9f2f-dc5f87294cfe@63c1.org
+URL:https://www.ufc.com/event/ufc-fight-night-january-11-2025#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20250302T000000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20250301T210000Z
+SUMMARY:UFC Fight Night: TBD vs TBD - Preliminaries
+UID:c69aeb51-5254-46a7-a4f2-217360147374@c69a.org
+URL:https://www.ufc.com/event/ufc-fight-night-march-01-2025#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20241026T180000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
+DTSTART:20241026T140000Z
+SUMMARY:UFC 308: Topuria vs Holloway - Preliminaries
+UID:9333b58e-2d3a-4dc5-8966-c5cfcd5e4a76@9333.org
+URL:https://www.ufc.com/event/ufc-308#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20250302T040000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20250302T000000Z
+SUMMARY:UFC Fight Night: TBD vs TBD - Main Card
+UID:7c3c3e24-4a4b-47e9-95e9-5ff0d7bb8057@7c3c.org
+URL:https://www.ufc.com/event/ufc-fight-night-march-01-2025#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241215T070000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Amalie Arena\, Tampa\, FL\, United States
+DTSTART:20241215T030000Z
+SUMMARY:UFC Fight Night: Covington vs Buckley - Main Card
+UID:dbdc9298-eff4-4ec3-8c1c-3d5d307f6d2b@dbdc.org
+URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20250309T070000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
+DTSTART:20250309T030000Z
+SUMMARY:UFC 313: TBD vs TBD - Main Card
+UID:c65073e3-a8e1-4c55-b830-0c4d11d95edb@c650.org
+URL:https://www.ufc.com/event/ufc-313#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241110T040000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241110T000000Z
+SUMMARY:UFC Fight Night: Magny vs Prates - Main Card
+UID:72bc8a35-4ad7-4107-b2d8-30ece051d12c@72bc.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20250112T040000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20250112T000000Z
+SUMMARY:UFC Fight Night: Dern vs Ribas 2 - Main Card
+UID:dc3e882f-77fe-4dc9-abab-64ec4bb98fc2@dc3e.org
+URL:https://www.ufc.com/event/ufc-fight-night-january-11-2025#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20250216T000000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20250215T210000Z
+SUMMARY:UFC Fight Night: Cannonier vs Rodrigues - Preliminaries
+UID:d03e67b2-845b-4ba3-8d1c-f4838e4631a7@d03e.org
+URL:https://www.ufc.com/event/ufc-fight-night-february-15-2025#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20241019T230000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241019T200000Z
+SUMMARY:UFC Fight Night: Hernandez vs Pereira - Preliminaries
+UID:22dbca80-2284-435a-bd74-41a2190c2eb7@22db.org
+URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
 DTEND:20250223T020000Z
-LAST-MODIFIED:20241217T001401Z
+LAST-MODIFIED:20241217T002219Z
 LOCATION:Climate Pledge Arena\, Seattle\, WA\, United States
 DTSTART:20250222T230000Z
 SUMMARY:UFC Fight Night: TBD vs TBD - Preliminaries
-UID:47066b6b-a060-4018-a91d-b237c764f761@4706.org
+UID:f8f95fd8-d9ce-4eaa-86b8-53a47e5e48b8@f8f9.org
 URL:https://www.ufc.com/event/ufc-fight-night-february-22-2025#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:main_card
 DTEND:20250209T070000Z
-LAST-MODIFIED:20241217T001401Z
+LAST-MODIFIED:20241217T002219Z
 LOCATION:Qudos Bank Arena\, Sydney Olympic Park\, NSW\, Australia
 DTSTART:20250209T030000Z
 SUMMARY:UFC 312: Du Plessis vs Strickland 2 - Main Card
-UID:8db8da18-015a-44e1-a63e-698713549e8b@8db8.org
+UID:d5111ad6-d91b-441e-98a4-2002600684db@d511.org
 URL:https://www.ufc.com/event/ufc-312#main_card
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:main_card
-DTEND:20250112T040000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20250112T000000Z
-SUMMARY:UFC Fight Night: Dern vs Ribas 2 - Main Card
-UID:110bde56-e1b9-41c4-920d-89c835045a14@110b.org
-URL:https://www.ufc.com/event/ufc-fight-night-january-11-2025#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241123T150000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Galaxy Arena\, Macao SAR China
-DTSTART:20241123T110000Z
-SUMMARY:UFC Fight Night: Yan vs Figueiredo - Main Card
-UID:048177f0-8303-4ea5-a4e0-e8eea49ace65@0481.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241020T030000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241019T230000Z
-SUMMARY:UFC Fight Night: Hernandez vs Pereira - Main Card
-UID:2c583e9f-8f49-49b6-bbf9-d9fe6dad2d68@2c58.org
-URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241103T040000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Rogers Place\, Edmonton\, AB\, Canada
-DTSTART:20241103T000000Z
-SUMMARY:UFC Fight Night: Moreno vs Albazi - Main Card
-UID:528b3298-2b31-4001-841f-58dada8e3539@528b.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20241208T030000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
-DTSTART:20241208T010000Z
-SUMMARY:UFC 310: Pantoja vs Asakura - Preliminaries
-UID:500f2223-aff3-4086-8f00-dce17cce9097@500f.org
-URL:https://www.ufc.com/event/ufc-310#prelims
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20250216T040000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20250216T000000Z
-SUMMARY:UFC Fight Night: Cannonier vs Rodrigues - Main Card
-UID:d10f23e7-2cb0-430e-a7dc-7c685dff0f10@d10f.org
-URL:https://www.ufc.com/event/ufc-fight-night-february-15-2025#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20250309T070000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
-DTSTART:20250309T030000Z
-SUMMARY:UFC 313: TBD vs TBD - Main Card
-UID:ebb2d1dd-632b-48a0-9b6d-d1674f7ef0a3@ebb2.org
-URL:https://www.ufc.com/event/ufc-313#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20241110T000000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241109T210000Z
-SUMMARY:UFC Fight Night: Magny vs Prates - Preliminaries
-UID:ff7879f4-21b0-4942-af99-d4fb7d9a1262@ff78.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024#prelims
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20250119T070000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Intuit Dome\, Inglewood\, CA\, United States
-DTSTART:20250119T030000Z
-SUMMARY:UFC 311: Makhachev vs Tsarukyan 2 - Main Card
-UID:37987391-e147-450b-b532-cfd5dab80405@3798.org
-URL:https://www.ufc.com/event/ufc-311#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241110T040000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241110T000000Z
-SUMMARY:UFC Fight Night: Magny vs Prates - Main Card
-UID:4928a9ec-8f6e-4f1b-84eb-42d55ce8490a@4928.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20241103T000000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Rogers Place\, Edmonton\, AB\, Canada
-DTSTART:20241102T210000Z
-SUMMARY:UFC Fight Night: Moreno vs Albazi - Preliminaries
-UID:fbd1ab67-0ebd-4eee-8425-d6300d4a800d@fbd1.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024#prelims
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20250112T000000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20250111T210000Z
-SUMMARY:UFC Fight Night: Dern vs Ribas 2 - Preliminaries
-UID:06b96f0b-0ffa-4648-a3cd-f40e259b3bde@06b9.org
-URL:https://www.ufc.com/event/ufc-fight-night-january-11-2025#prelims
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241208T070000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
-DTSTART:20241208T030000Z
-SUMMARY:UFC 310: Pantoja vs Asakura - Main Card
-UID:2367ad8e-98b3-424d-9f8e-4dd9b0167dea@2367.org
-URL:https://www.ufc.com/event/ufc-310#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241117T070000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Madison Square Garden\, New York\, NY\, United States
-DTSTART:20241117T030000Z
-SUMMARY:UFC 309: Jones vs Miocic - Main Card
-UID:f5f1a43d-cf90-42f5-a96f-4b642a18f712@f5f1.org
-URL:https://www.ufc.com/event/ufc-309#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20250201T170000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:The Venue\, Riyadh\, Saudi Arabia
-DTSTART:20250201T140000Z
-SUMMARY:UFC Fight Night: Adesanya vs Imavov - Preliminaries
-UID:793f7ad5-cd44-4600-82f3-ca183926b3c4@793f.org
-URL:https://www.ufc.com/event/ufc-fight-night-february-01-2025#prelims
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241215T070000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Amalie Arena\, Tampa\, FL\, United States
-DTSTART:20241215T030000Z
-SUMMARY:UFC Fight Night: Covington vs Buckley - Main Card
-UID:7b4688a8-0a44-4bd8-a86d-073aa92d380e@7b46.org
-URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024#main_card
+DTEND:20250223T060000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Climate Pledge Arena\, Seattle\, WA\, United States
+DTSTART:20250223T020000Z
+SUMMARY:UFC Fight Night: TBD vs TBD - Main Card
+UID:b2a5a152-0607-45cd-9f34-111f0f07fec2@b2a5.org
+URL:https://www.ufc.com/event/ufc-fight-night-february-22-2025#main_card
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:main_card
 DTEND:20250201T210000Z
-LAST-MODIFIED:20241217T001401Z
+LAST-MODIFIED:20241217T002219Z
 LOCATION:The Venue\, Riyadh\, Saudi Arabia
 DTSTART:20250201T170000Z
 SUMMARY:UFC Fight Night: Adesanya vs Imavov - Main Card
-UID:3d112980-e468-4c45-a017-c49ebf5a0005@3d11.org
+UID:c5486142-5cfe-4f85-9a33-8cfc6387fe19@c548.org
 URL:https://www.ufc.com/event/ufc-fight-night-february-01-2025#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:main_card
-DTEND:20241026T220000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
-DTSTART:20241026T180000Z
-SUMMARY:UFC 308: Topuria vs Holloway - Main Card
-UID:3adc69b1-8ed5-4cc0-b04b-38ffa9a73d8a@3adc.org
-URL:https://www.ufc.com/event/ufc-308#main_card
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20241026T180000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Etihad Arena\, Abu Dhabi\, United Arab Emirates
-DTSTART:20241026T140000Z
-SUMMARY:UFC 308: Topuria vs Holloway - Preliminaries
-UID:9a9c0b38-02f6-4fce-a315-25c6928758f2@9a9c.org
-URL:https://www.ufc.com/event/ufc-308#prelims
-END:VEVENT
-BEGIN:VEVENT
-X-FIGHTCARD:prelims
-DTEND:20241019T230000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:UFC APEX\, Las Vegas\, NV\, United States
-DTSTART:20241019T200000Z
-SUMMARY:UFC Fight Night: Hernandez vs Pereira - Preliminaries
-UID:5d19e20e-3717-48b7-bd81-2269dafbbcdc@5d19.org
-URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
 DTEND:20250309T030000Z
-LAST-MODIFIED:20241217T001401Z
+LAST-MODIFIED:20241217T002219Z
 LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
 DTSTART:20250309T010000Z
 SUMMARY:UFC 313: TBD vs TBD - Preliminaries
-UID:f93e26bb-c545-4643-812b-e8b2d7b44344@f93e.org
+UID:cf04f208-73de-4789-8200-66823ba431cd@cf04.org
 URL:https://www.ufc.com/event/ufc-313#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
-DTEND:20241215T030000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Amalie Arena\, Tampa\, FL\, United States
-DTSTART:20241215T000000Z
-SUMMARY:UFC Fight Night: Covington vs Buckley - Preliminaries
-UID:bb276401-38e4-412c-8c28-b77a1a6b72ff@bb27.org
-URL:https://www.ufc.com/event/ufc-fight-night-december-14-2024#prelims
+DTEND:20241123T110000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Galaxy Arena\, Macao SAR China
+DTSTART:20241123T080000Z
+SUMMARY:UFC Fight Night: Yan vs Figueiredo - Preliminaries
+UID:66575d10-bc8d-4531-85f6-8fe141d1839d@6657.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20250119T030000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Intuit Dome\, Inglewood\, CA\, United States
+DTSTART:20250119T010000Z
+SUMMARY:UFC 311: Makhachev vs Tsarukyan 2 - Preliminaries
+UID:fe47cf0f-b042-4da2-97be-b861442b2530@fe47.org
+URL:https://www.ufc.com/event/ufc-311#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20250119T070000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Intuit Dome\, Inglewood\, CA\, United States
+DTSTART:20250119T030000Z
+SUMMARY:UFC 311: Makhachev vs Tsarukyan 2 - Main Card
+UID:f2b1302e-a93c-49da-b2b8-5439e33fdc80@f2b1.org
+URL:https://www.ufc.com/event/ufc-311#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241123T150000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Galaxy Arena\, Macao SAR China
+DTSTART:20241123T110000Z
+SUMMARY:UFC Fight Night: Yan vs Figueiredo - Main Card
+UID:57ed2f93-7123-4037-8e22-931de78b75c3@57ed.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241117T070000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Madison Square Garden\, New York\, NY\, United States
+DTSTART:20241117T030000Z
+SUMMARY:UFC 309: Jones vs Miocic - Main Card
+UID:62ab9311-ac23-4689-8318-76203020dd4b@62ab.org
+URL:https://www.ufc.com/event/ufc-309#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241020T030000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241019T230000Z
+SUMMARY:UFC Fight Night: Hernandez vs Pereira - Main Card
+UID:55b37882-3436-4bb5-93a7-f0923df79041@55b3.org
+URL:https://www.ufc.com/event/ufc-fight-night-october-19-2024#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:prelims
+DTEND:20241103T000000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:Rogers Place\, Edmonton\, AB\, Canada
+DTSTART:20241102T210000Z
+SUMMARY:UFC Fight Night: Moreno vs Albazi - Preliminaries
+UID:0df665f2-fcf1-4579-b903-979b9cba0046@0df6.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-02-2024#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
 DTEND:20250209T030000Z
-LAST-MODIFIED:20241217T001401Z
+LAST-MODIFIED:20241217T002219Z
 LOCATION:Qudos Bank Arena\, Sydney Olympic Park\, NSW\, Australia
 DTSTART:20250209T010000Z
 SUMMARY:UFC 312: Du Plessis vs Strickland 2 - Preliminaries
-UID:1cad5fe1-849c-4fff-b823-018e1c22ed6e@1cad.org
+UID:a7a4f987-9a14-4cb9-9f98-02e20e976b16@a7a4.org
 URL:https://www.ufc.com/event/ufc-312#prelims
 END:VEVENT
 BEGIN:VEVENT
 X-FIGHTCARD:prelims
-DTEND:20241123T110000Z
-LAST-MODIFIED:20241217T001401Z
-LOCATION:Galaxy Arena\, Macao SAR China
-DTSTART:20241123T080000Z
-SUMMARY:UFC Fight Night: Yan vs Figueiredo - Preliminaries
-UID:1daf565f-0caa-4d10-b787-8b677aee4b6f@1daf.org
-URL:https://www.ufc.com/event/ufc-fight-night-november-23-2024#prelims
+DTEND:20241110T000000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20241109T210000Z
+SUMMARY:UFC Fight Night: Magny vs Prates - Preliminaries
+UID:5a52965b-d040-46ca-ad5c-894d8987516f@5a52.org
+URL:https://www.ufc.com/event/ufc-fight-night-november-09-2024#prelims
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20241208T070000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:T-Mobile Arena\, Las Vegas\, NV\, United States
+DTSTART:20241208T030000Z
+SUMMARY:UFC 310: Pantoja vs Asakura - Main Card
+UID:cd974c0f-6d90-4999-b1c4-0961bc8e62e0@cd97.org
+URL:https://www.ufc.com/event/ufc-310#main_card
+END:VEVENT
+BEGIN:VEVENT
+X-FIGHTCARD:main_card
+DTEND:20250216T040000Z
+LAST-MODIFIED:20241217T002219Z
+LOCATION:UFC APEX\, Las Vegas\, NV\, United States
+DTSTART:20250216T000000Z
+SUMMARY:UFC Fight Night: Cannonier vs Rodrigues - Main Card
+UID:ad52d0f0-21dd-4029-958e-908a3f36b940@ad52.org
+URL:https://www.ufc.com/event/ufc-fight-night-february-15-2025#main_card
 END:VEVENT
 END:VCALENDAR
