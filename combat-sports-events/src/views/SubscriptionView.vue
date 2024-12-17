@@ -2,13 +2,13 @@
 import SubscribePopover from '../components/SubscribePopover.vue';
 
 const props = defineProps<{
-    files: string[];
+    ical_files: string[];
 }>();
 </script>
 
 <template>
     <div class="popover_container">
-        <SubscribePopover v-for="file of props.files" :file=file />
+        <SubscribePopover v-for="file of props.ical_files" :file=file />
     </div>
 </template>
 

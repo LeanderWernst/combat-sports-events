@@ -6,7 +6,7 @@ import Headline from './components/Headline.vue'
 <template>
   <header>
     <div class="wrapper">
-      <Headline msg="Combat Sports Events" />
+      <Headline msg="combat cal" />
       <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>

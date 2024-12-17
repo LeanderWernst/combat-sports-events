@@ -130,17 +130,18 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   /* background: var(--color-background); */
-  background: url('boxing-ring.webp');
+  background: url('/images/boxing-ring.webp');
   background-size: cover;
   background-color: rgba(90, 133, 215, 0.4);
   background-blend-mode: multiply;
-  background-position-x: center;
+  background-attachment: fixed;
+  background-position: center;
   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
   font-family: "Oswald", sans-serif;
-  font-size: 15px;
+  font-size: calc(15px + 0.25vw);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -13,8 +13,13 @@ defineProps<{
 <style scoped>
 h1 {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-family: 'UFC';
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2em;
+  letter-spacing: 4px;
+  color: whitesmoke;
+  line-height: normal;
+  margin-top: 25px;
 }
 </style>

@@ -1,7 +1,8 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 2150px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
@@ -48,5 +49,18 @@ a,
     flex-direction: column;
     /* grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
+  }
+}
+
+
+@media (min-width: 1360px) {
+  #app {
+    max-width: 1360px;
+  }
+}
+
+@media (min-width: 1550px) {
+  #app {
+    max-width: 1550px;
   }
 }
