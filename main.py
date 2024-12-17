@@ -86,7 +86,7 @@ def scrape_glory():
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         #event_cards = soup.find_all('div', class_=['card', 'gold', 'event-card'])
         a_event_links = soup.find_all('a', href=re.compile(r'^/events/'))
-        event_links = { link['href'] for link in a_event_links }
+        event_links = { link['href'].split('#')[0] for link in a_event_links }
 
         for link in event_links:
             driver.get(config["base_domain"] + link)
@@ -127,7 +127,7 @@ def scrape_glory():
                 end_main_utc = (dateparser.parse(date + " " + start_main, settings={'TIMEZONE': 'CET', 'TO_TIMEZONE': 'UTC'}) + timedelta(hours=config["duration"])).isoformat()
 
             event =  {
-                "url": config["base_domain"] + link.split('#')[0],
+                "url": config["base_domain"] + link,
                 "organization": "glory",
                 "title": event_title,
                 "date": start_main_utc,
