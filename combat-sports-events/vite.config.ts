@@ -21,13 +21,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['**/ics/**']
     },
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      }
-    }
+    minify: 'esbuild',
   },
   base: '/combat-sports-events/',
 })
