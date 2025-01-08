@@ -311,7 +311,7 @@ def fetch_and_convert_one_ics_to_json():
 
         events.append(event_json)
     events = sorted(events, key=lambda event: event["date"], reverse=True)
-    save_events(events, 'one_championship.json')
+    save_events(events, 'one.json')
     logger.info(f'Success!')
     return events
 
