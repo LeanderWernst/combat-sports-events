@@ -27,6 +27,7 @@ import os
 import subprocess
 import glob
 from dotenv import load_dotenv
+
 #######################################################################################
 
 locale.setlocale(locale.LC_TIME, 'en_US.UTF-8')
@@ -444,6 +445,9 @@ def get_custom_ical_property(event, property_name):
     return None
 
 def update_calendar(events, calendar_file, calendar_name):
+    if calendar_name == organisations["one"]["ical_name"]:
+        # One Championship has direct link to official ics
+        return
     logger.info(f'Updating calendar for {calendar_name}...')
 
     os.makedirs('ics', exist_ok=True)
@@ -507,24 +511,6 @@ def update_calendar(events, calendar_file, calendar_name):
         f.writelines(calendar)
     logger.info(f'Success!')
 
-organisations = {
-    "ufc": {
-        "scrape_function": scrape_ufc,
-        "ical_file": "ufc_events.ics",
-        "ical_name": "UFC Events"
-    },
-    "glory": {
-        "scrape_function": scrape_glory,
-        "ical_file": "glory_events.ics",
-        "ical_name": "Glory Events"
-    },
-    "one": {
-        "scrape_function": fetch_and_convert_one_ics_to_json,
-        "ical_file": "https://calendar.onefc.com/ONE-Championship-events.ics",
-        "ical_name": "One Champtionship"
-    }
-}
-
 def git_pull():
     try:
         subprocess.run(["git", "pull", "--no-edit"], check=True)
@@ -552,6 +538,26 @@ def git_commit_and_push():
     except subprocess.CalledProcessError as e:
         logger.error("Error executing Git command:", e)
         raise
+
+#######################################################################################
+
+organisations = {
+    "ufc": {
+        "scrape_function": scrape_ufc,
+        "ical_file": "ufc_events.ics",
+        "ical_name": "UFC Events"
+    },
+    "glory": {
+        "scrape_function": scrape_glory,
+        "ical_file": "glory_events.ics",
+        "ical_name": "Glory Events"
+    },
+    "one": {
+        "scrape_function": fetch_and_convert_one_ics_to_json,
+        "ical_file": "https://calendar.onefc.com/ONE-Championship-events.ics",
+        "ical_name": "One Champtionship Events"
+    }
+}
 
 def debug():
     fetch_and_convert_one_ics_to_json()
