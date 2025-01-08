@@ -62,6 +62,17 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 
 #######################################################################################
 
+CATEGORY = {
+    "MMA": "mma",
+    "MUAY_THAI": "muaythai",
+    "K1": "k1",
+    "KICKBOXING": "kickboxing",
+    "GRAPPLING": "grappling",
+    "BOXING": "boxing",
+    "BAREKNUCKLE": "bareknuckle",
+    "BJJ": "bjj"
+}
+
 def scrape_glory():
     config = {
         "headers": {
@@ -156,6 +167,68 @@ def scrape_glory():
     finally:
         driver.quit()
 
+""" def scrape_one_championship():
+    config = {
+        "headers": {
+            "Accept-Language": "en",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        },
+        "duration": 3,
+        "base_domain": "https://www.onefc.com",
+        "scrape_domain": "https://www.onefc.com/events/"
+    }
+
+    events = []
+
+    try:
+        response = requests.get(config["scrape_domain"], headers=config["headers"])
+        soup = BeautifulSoup(response.content, 'html.parser')
+        
+        event_cards = soup.find_all('div', class_='simple-post-card is-event is-image-zoom-area')
+
+        for card in event_cards:
+            event_link = card.find('a', class_='title')['href']
+            event_url = event_link
+
+            event_title = card.find('a', class_='title')['title']
+            event_datetime = card.find('div', class_='datetime')['data-timestamp']
+            location_div = card.find('div', class_='location')
+            event_venue = location_div.text.strip() if location_div else "n/a"
+
+            start_main_utc = datetime.fromtimestamp(int(event_datetime), tz=timezone.utc).isoformat()
+            end_main_utc = (datetime.fromtimestamp(int(event_datetime), tz=timezone.utc) + timedelta(hours=config["duration"])).isoformat()
+
+            event = {
+                "url": event_url,
+                "organization": "one_championship",
+                "title": event_title,
+                "date": start_main_utc,
+                "description": f"ONE Championship event: {event_title}",
+                "broadcast": ["onefc", "youtube"],
+                "venue": event_venue,
+                "category": ["mma", "kickboxing", "grappling", "muay thai"],
+                "cards": {
+                    "main_card": {
+                        "start": start_main_utc,
+                        "end": end_main_utc
+                    },
+                    "prelims": {
+                        "start": None,
+                        "end": None
+                    }
+                },
+                "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+            }
+            events.append(event)
+
+        events = sorted(events, key=lambda event: event["date"], reverse=True)
+        save_events(events, 'one_championship.json')
+        return events
+
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        return [] """
+
 def write_events_to_json(events, filename):
     """
     Saves events in /json/{year} and updates existing.
@@ -200,6 +273,46 @@ def write_events_to_json(events, filename):
 
     with open(file_path, "w", encoding="utf-8") as file:
         json.dump(updated_events, file, indent=2, ensure_ascii=False)
+
+def fetch_and_convert_one_ics_to_json():
+    response = requests.get(organisations["one"]["ical_file"])
+    response.raise_for_status()
+
+    calendar = Calendar(response.text)
+
+    broadcast = ["onefc", "youtube"]
+    category = ["mma", "kickboxing", "grappling", "muay thai"]
+
+    events = []
+
+    for event in calendar.events:
+        event_json = {
+            "url": event.url if event.url else "n/a",
+            "organization": "one_championship",
+            "title": event.name,
+            "date": event.begin.isoformat(),
+            "description": event.description.split("\n\n")[1:-1] if event.description else [],
+            "broadcast": broadcast,
+            "venue": event.location if event.location else "n/a",
+            "category": category,
+            "cards": {
+                "main_card": {
+                    "start": event.begin.isoformat(),
+                    "end": event.end.isoformat() if event.end else None
+                },
+                "prelims": {
+                    "start": None,
+                    "end": None
+                }
+            },
+            "last_updated": datetime.now(timezone.utc).isoformat() + "Z"
+        }
+
+        events.append(event_json)
+    events = sorted(events, key=lambda event: event["date"], reverse=True)
+    save_events(events, 'one_championship.json')
+    logger.info(f'Success!')
+    return events
 
 
 def split_events_by_year(events):
@@ -404,6 +517,11 @@ organisations = {
         "scrape_function": scrape_glory,
         "ical_file": "glory_events.ics",
         "ical_name": "Glory Events"
+    },
+    "one": {
+        "scrape_function": fetch_and_convert_one_ics_to_json,
+        "ical_file": "https://calendar.onefc.com/ONE-Championship-events.ics",
+        "ical_name": "One Champtionship"
     }
 }
 
@@ -436,13 +554,7 @@ def git_commit_and_push():
         raise
 
 def debug():
-    with open('ics/ufc_events.ics', 'r') as f:
-        calendar = Calendar(f.read())
-    existing_events = {event.url: event for event in calendar.events}
-    # existing_events['https://www.ufc.comhttps://www.ufc.com/event/ufc-313'].extra.append(ContentLine(name="X-FIGHTCARD", value="TEST"))
-    # with open('ics/ufc_events.ics', 'w') as f:
-    #     f.writelines(calendar)
-    print(existing_events['https://www.ufc.comhttps://www.ufc.com/event/ufc-313'].extra)
+    fetch_and_convert_one_ics_to_json()
 
 if __name__ == '__main__':
     git_pull()
