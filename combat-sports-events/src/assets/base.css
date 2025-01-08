@@ -66,6 +66,13 @@
   src: url('/fonts/good-timing.woff2') format('woff2');
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'ONE';
+  font-style: normal;
+  src: url('/fonts/tt-bricks-extrabold-italic.woff2') format('woff2');
+}
+
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;

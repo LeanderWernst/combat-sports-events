@@ -306,7 +306,6 @@ const prevPage = () => {
 
     <!-- Filter Button -->
     <div class="filter-container">
-        
 
     <!-- Popover Container -->
     <Popover ref="filterPopover" id="filter_popover">
@@ -317,14 +316,14 @@ const prevPage = () => {
                     <Checkbox 
                         class="checkbox"
                         :inputId="promo" 
-                        :value="promo" 
+                        :value="promo"
                         v-model="selectedFilters"
                     />
-                    <label :for="promo" :class="promo">{{ promo }}</label>
+                    <label :for="promo" :class="promo != 'One Championship' ? promo : 'one'">{{ promo }}</label>
                 </div>
                 <div style="display: flex; justify-content: center;">
                     <Button 
-                        icon="pi pi-filter-slash" 
+                        icon="pi pi-filter-slash"
                         label="RESET" 
                         @click="toggleAllFilters" 
                         class="reset-filter"
@@ -365,20 +364,24 @@ const prevPage = () => {
         </Column>
         <Column field="org" header="PROMO" style="width: 8.5%; min-width: 110px;">
             <template #body="slotProps">
-                <span :class="slotProps.data.organization.toLowerCase()">{{ slotProps.data.organization.toLowerCase() }}</span>
+                <span :class="slotProps.data.organization.split(' ')[0].toLowerCase()">{{ slotProps.data.organization.split(' ')[0].toLowerCase() }}</span>
             </template>
         </Column>
         <Column field="title" header="EVENT" style="width:25%; min-width: 100px;"></Column>
         <Column field="start" header="BEGIN" style="width:13%; min-width: 150px;">
             <template #body="slotProps">
                 <table class="time-info-table">
-                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[0] }}</td>
-                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[1] }}</td>
-                    <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[2] }}</td>
+                    <tbody>
+                        <tr>
+                            <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[0] }}</td>
+                            <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[1] }}</td>
+                            <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[2] }}</td>
+                        </tr>
+                    </tbody>
                 </table>
             </template>
         </Column>
-        <Column field="end" header="END" style="width:13%; min-width: 150px;">
+        <!-- <Column field="end" header="END" style="width:13%; min-width: 150px;">
             <template #body="slotProps">
                 <table class="time-info-table">
                     <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.end))[0] }}</td>
@@ -386,7 +389,7 @@ const prevPage = () => {
                     <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.end))[2] }}</td>
                 </table>
             </template>
-        </Column>
+        </Column> -->
         <Column field="venue" header="LOCATION"></Column>
         <Column field="details" style="width:6%;">
             <template #header >
@@ -404,12 +407,12 @@ const prevPage = () => {
         <div>
             <h2>{{ data.title }}</h2>
             <hr>
-            <p>
+            <p v-if="data.cards.prelims.start">
                 PRELIMS<br>
                 Start: {{ new Date(data.cards.prelims.start).toLocaleString('en-GB').slice(0,-3) }}<br>
                 End: {{ new Date(data.cards.prelims.end).toLocaleString('en-GB').slice(0,-3) }}
             </p>
-            <br>
+            <br v-if="data.cards.prelims.start">
             <p>
                 MAIN CARD<br>
                 Start: {{ new Date(data.cards.main_card.start).toLocaleString('en-GB').slice(0,-3) }}<br>

@@ -13,7 +13,9 @@ const popover = ref();
 const toggle = (event: any) => {
     popover.value.toggle(event);
 }
-const link = ref(`https://raw.githubusercontent.com/LeanderWernst/combat-sports-event-scraper/refs/heads/main/ics/${props.file}`);
+const link = !props.file.includes("one_events.ics")
+             ? ref(`https://raw.githubusercontent.com/LeanderWernst/combat-sports-event-scraper/refs/heads/main/ics/${props.file}`)
+             : ref("https://calendar.onefc.com/ONE-Championship-events.ics");
 const toast = useToast();
 
 const copyToClipboard = () => {
@@ -26,21 +28,27 @@ const copyToClipboard = () => {
 
 const downloadFile = async () => {
     try {
-        const response = await fetch(link.value);
-        if (!response.ok) throw new Error("File download failed.");
-
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
+        let url;
+        
+        if (!props.file.includes("one_events.ics")) {
+            const response = await fetch(link.value);
+            if (!response.ok) throw new Error("File download failed.");
+    
+            const blob = await response.blob();
+            url = window.URL.createObjectURL(blob);
+        }
 
         const anchor = document.createElement('a');
-        anchor.href = url;
+        anchor.href = url ? url : link.value;
         anchor.download = promoTitle.toLowerCase() + "_events.ics";
 
         document.body.appendChild(anchor);
         anchor.click();
         document.body.removeChild(anchor);
 
-        window.URL.revokeObjectURL(url);
+        if (!props.file.includes("one_events.ics") && url) {
+            window.URL.revokeObjectURL(url);
+        }
     } catch (error) {
         console.error("Error downloading file:", error);
     }
