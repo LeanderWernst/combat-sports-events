@@ -1,0 +1,25 @@
+[
+  {
+    "url": "https://glorykickboxing.com/events/glory-98",
+    "organization": "glory",
+    "title": "GLORY 98 - GLORY Kickboxing",
+    "date": "2025-02-22T19:00:00+00:00",
+    "description": "The official home of GLORY, the world's largest kickboxing organization.",
+    "broadcast": [
+      "triller_tv"
+    ],
+    "venue": "RTM Stage Rotterdam",
+    "category": "mma",
+    "cards": {
+      "main_card": {
+        "start": "2025-02-22T19:00:00+00:00",
+        "end": "2025-02-22T22:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:10.956220+00:00Z"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-31",
+    "organization": "one_championship",
+    "title": "ONE Fight Night 31",
+    "date": "2025-06-07T00:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-06-07T00:00:00+00:00",
+        "end": "2025-06-07T06:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.449011+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-us-event-tba",
+    "organization": "one_championship",
+    "title": "ONE U.S. Event (TBA)",
+    "date": "2025-05-23T23:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "n/a",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-05-23T23:00:00+00:00",
+        "end": "2025-05-24T05:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448889+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-30",
+    "organization": "one_championship",
+    "title": "ONE Fight Night 30",
+    "date": "2025-04-05T00:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-04-05T00:00:00+00:00",
+        "end": "2025-04-05T06:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448669+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-172-saitama",
+    "organization": "one_championship",
+    "title": "ONE 172: Takeru vs. Rodtang",
+    "date": "2025-03-23T08:00:00+00:00",
+    "description": [
+      "Takeru Segawa vs. Rodtang Jitmuangnon | Kickboxing | Flyweight",
+      "Adriano Moraes vs. Yuya Wakamatsu | Flyweight World Championship"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Saitama Super Arena, Saitama",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-23T08:00:00+00:00",
+        "end": "2025-03-23T14:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448750+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-29",
+    "organization": "one_championship",
+    "title": "ONE Fight Night 29",
+    "date": "2025-03-08T01:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-08T01:00:00+00:00",
+        "end": "2025-03-08T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448488+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-171-qatar",
+    "organization": "one_championship",
+    "title": "ONE 171: Qatar",
+    "date": "2025-02-20T14:00:00+00:00",
+    "description": [
+      "Jonathan Haggerty vs. Wei Rui | Bantamweight World Championship",
+      "Joshua Pacio vs. Jarred Brooks | Strawweight World Championship",
+      "Dagi Arslanaliev vs. Roberto Soldic | Mixed Martial Arts | Welterweight",
+      "Bibiano Fernandes vs. Kevin Belingon | Mixed Martial Arts | Bantamweight",
+      "Shamil Gasanov vs. Martin Nguyen | Mixed Martial Arts | Featherweight",
+      "Jake Peacock vs. Shinji Suzuki | Muay Thai | Bantamweight",
+      "Ayaka Miura vs. Ritu Phogat | Mixed Martial Arts | Atomweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lusail Sports Arena, Lusail",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-20T14:00:00+00:00",
+        "end": "2025-02-20T20:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448271+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-28",
+    "organization": "one_championship",
+    "title": "ONE Fight Night 28: Prajanchai vs. Barboza",
+    "date": "2025-02-08T01:00:00+00:00",
+    "description": [
+      "Prajanchai PK Saenchai vs. Ellis Badr Barboza | Strawweight World Championship",
+      "Lito Adiwang vs. Keito Yamakita | Mixed Martial Arts | Strawweight",
+      "Jeremy Pacatiw vs. Ibragim Dauev | Mixed Martial Arts | Bantamweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-08T01:00:00+00:00",
+        "end": "2025-02-08T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448777+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-170",
+    "organization": "one_championship",
+    "title": "ONE 170",
+    "date": "2025-01-24T12:30:00+00:00",
+    "description": [
+      "Tawanchai vs. Superbon | Featherweight World Championship",
+      "Nico Carrillo vs. Nabil Anane | Interim Bantamweight World Championship",
+      "Fabricio Andrade vs. Kwon Won Il | Bantamweight World Championship",
+      "Seksan  Or Kwanmuang vs. Soe Lin Oo | Muay Thai | Catchweight",
+      "Maurice  Abevi vs. Samat Mamedov | Mixed Martial Arts | Lightweight",
+      "Jo Nattawut vs. Bampara Kouyate | Muay Thai | Featherweight",
+      "Johan Ghazali vs. Johan Estupinan | Muay Thai | Flyweight",
+      "Marcelo Garcia vs. Masakazu Imanari | Submission Grappling | Openweight",
+      "Suriyanlek Por Yenying vs. Thant Zin | Muay Thai | Catchweight",
+      "Freddie Haggerty vs. Jordan  Estupinan | Muay Thai | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Impact Arena, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-24T12:30:00+00:00",
+        "end": "2025-01-24T18:30:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448916+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-27",
+    "organization": "one_championship",
+    "title": "ONE Fight Night 27: Tang vs. Abdullaev",
+    "date": "2025-01-11T01:00:00+00:00",
+    "description": [
+      "Tang Kai vs. Akbar Abdullaev | Featherweight World Championship",
+      "Kulabdam Sor Jor Piek Uthai vs. John Lineker  | Muay Thai | Bantamweight",
+      "Denice Zamboanga vs. Alyona Rassohyna | Interim Atomweight World Championship",
+      "Luke Lessei vs. Cody Jerome | Muay Thai | Featherweight",
+      "Tommy Langaker vs. Dante Leon | Grappling | Catchweight",
+      "Tatsumitsu Wada vs. Sanzhar Zakirov | Mixed Martial Arts | Strawweight",
+      "Rambolek Chor Ajalaboon vs. Parham Gheirati | Muay Thai | Bantamweight",
+      "Aaron Canarte vs. Enkh-Orgil Baatarkhuu | Mixed Martial Arts | Featherweight",
+      "Chihiro Sawada vs. Meng Bo | Mixed Martial Arts | Atomweight",
+      "Suablack Tor Pran49 vs. Dmitrii Kovtun | Muay Thai | Bantamweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-11T01:00:00+00:00",
+        "end": "2025-01-11T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.448065+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-93",
+    "organization": "one_championship",
+    "title": "ONE Friday Fights 93",
+    "date": "2025-01-10T12:30:00+00:00",
+    "description": [
+      "Kongchai Chanaidonmueang  vs. Ramadan Ondash | Muay Thai | Strawweight",
+      "Worapon Sor Dechapan vs. Soner Sen | Muay Thai | Catchweight",
+      "Maemmot Sor Salacheep vs. Satangthong Chor Hapayak | Muay Thai | Catchweight",
+      "Yodkitti FiatPathum vs. Thway Lin Htet | Muay Thai | Strawweight",
+      "Chalie Singha Mawynn vs. Rocky Wor Wantawee | Muay Thai | Catchweight",
+      "Petninmungkorn Captainkaneboxing vs. Rifdean Masdor | Muay Thai | Atomweight",
+      "Petlampun Muadablampang vs. Abdallah Ondash | Muay Thai | Catchweight",
+      "Tahaneak Nayokatasala vs. Andrii Mezentsev | Muay Thai | Catchweight",
+      "Islay Erika Bomogao vs. Ran Longshu | Muay Thai | Catchweight",
+      "Antonio Piana vs. Haruyuki Tanitsu | Muay Thai | Catchweight",
+      "Dzhabir Dzhabrailov vs. Khusan Urakov | Mixed Martial Arts | Catchweight",
+      "Oh Su Hwan vs. Nachyn Sat | Mixed Martial Arts | Featherweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-10T12:30:00+00:00",
+        "end": "2025-01-10T18:30:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-01-08T20:40:14.449104+00:00Z"
+  }
+]
