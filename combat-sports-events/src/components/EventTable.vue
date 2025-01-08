@@ -297,7 +297,7 @@ const prevPage = () => {
     <!-- Paginator -->
     <div v-if="groupedEvents.length > 0" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 16px;">
         <Button icon="pi pi-chevron-left" @click="prevPage" :disabled="currentPage === 0" text rounded />
-        <span style="min-width: 150px; text-align: center; font-size: 1rem;">
+        <span style="min-width: 150px ; text-align: center; font-size: 1rem;">
             {{ currentMonthYear }}
         </span>
         <Button icon="pi pi-chevron-right" @click="nextPage" :disabled="currentPage === groupedEvents.length - 1" text
@@ -350,7 +350,7 @@ const prevPage = () => {
         scrollHeight="65vh"
     >
         <!-- Paginator Container -->
-        <Column expander style="width: 5rem; text-align: center;" >
+        <Column expander style="width: 3%; text-align: center;" >
             <template #header >
                 <Button 
                     type="button"
@@ -362,15 +362,16 @@ const prevPage = () => {
                 />
             </template>
         </Column>
-        <Column field="org" header="PROMO" style="width: 8.5%; min-width: 110px;">
+        <Column v-if="!isSmallScreen" field="org" header="PROMO" style="width: 8%;">
             <template #body="slotProps">
                 <span :class="slotProps.data.organization.split(' ')[0].toLowerCase()">{{ slotProps.data.organization.split(' ')[0].toLowerCase() }}</span>
             </template>
         </Column>
-        <Column field="title" header="EVENT" style="width:25%; min-width: 100px;"></Column>
-        <Column field="start" header="BEGIN" style="width:13%; min-width: 150px;">
+        <Column field="title" header="EVENT" style="width:29%;"></Column>
+        <Column field="start" header="BEGIN" style="width:29%; padding: 0.8rem">
             <template #body="slotProps">
-                <table class="time-info-table">
+                {{ formatDateTime(new Date(slotProps.data.cards.main_card.start)) }}
+                <!-- <table class="time-info-table">
                     <tbody>
                         <tr>
                             <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[0] }}</td>
@@ -378,7 +379,7 @@ const prevPage = () => {
                             <td>{{ formatDateTimeArray(new Date(slotProps.data.cards.main_card.start))[2] }}</td>
                         </tr>
                     </tbody>
-                </table>
+                </table> -->
             </template>
         </Column>
         <!-- <Column field="end" header="END" style="width:13%; min-width: 150px;">
@@ -390,13 +391,13 @@ const prevPage = () => {
                 </table>
             </template>
         </Column> -->
-        <Column field="venue" header="LOCATION"></Column>
-        <Column field="details" style="width:6%;">
-            <template #header >
+        <Column v-if="!isSmallScreen" field="venue" header="LOCATION" style="width: 29%;"></Column>
+        <Column field="details" style="width: 2%; text-align: center;">
+            <template #header style="justify-content: center; padding: 0;">
                 <span class="p-datatable-column-title" style="text-align: center;">URL</span>
             </template>
             <template #body="slotProps">
-                <a :href="slotProps.data.url" target="_blank" class="p-link">
+                <a :href="slotProps.data.url" target="_blank" class="p-link" style="padding: 0;">
                     <i class="pi pi-external-link"></i>
                 </a>
             </template>
@@ -460,7 +461,6 @@ a:hover {
     background-color: rgb(207, 27, 3);
     border-color: rgb(207, 27, 3);
     color: white;
-    margin: 15px;
 }
 
 .reset-filter {
@@ -506,6 +506,14 @@ table.time-info-table td {
 :deep(.p-datatable-column-sorted),
 :deep(.p-datatable-selectable-row) {
     height: 75px;
+}
+
+:deep(.p-datatable-thead > tr > th:first-child > div) {
+    justify-content: center;
+}
+
+:deep(.p-datatable-thead > tr > th:last-child > div) {
+    justify-content: center;
 }
 
 :deep(.p-datatable-tbody > tr.p-datatable-row-selected) {

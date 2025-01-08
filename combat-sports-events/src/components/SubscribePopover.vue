@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineProps } from 'vue';
+import { ref } from 'vue';
 import { InputGroup, InputGroupAddon, InputText, Button, Popover } from 'primevue';
 import 'primeicons/primeicons.css';
 import { useToast } from "primevue/usetoast";
@@ -29,7 +29,7 @@ const copyToClipboard = () => {
 const downloadFile = async () => {
     try {
         let url;
-        
+
         if (!props.file.includes("one_events.ics")) {
             const response = await fetch(link.value);
             if (!response.ok) throw new Error("File download failed.");

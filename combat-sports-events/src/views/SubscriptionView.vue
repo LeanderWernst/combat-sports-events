@@ -16,6 +16,7 @@ const props = defineProps<{
     .popover_container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .popover_container > div {
