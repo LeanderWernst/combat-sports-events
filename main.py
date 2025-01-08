@@ -201,7 +201,7 @@ def scrape_glory():
 
             event = {
                 "url": event_url,
-                "organization": "one_championship",
+                "organization": "One Championship",
                 "title": event_title,
                 "date": start_main_utc,
                 "description": f"ONE Championship event: {event_title}",
@@ -223,7 +223,7 @@ def scrape_glory():
             events.append(event)
 
         events = sorted(events, key=lambda event: event["date"], reverse=True)
-        save_events(events, 'one_championship.json')
+        save_events(events, 'one.json')
         return events
 
     except Exception as e:
@@ -289,7 +289,7 @@ def fetch_and_convert_one_ics_to_json():
     for event in calendar.events:
         event_json = {
             "url": event.url if event.url else "n/a",
-            "organization": "one_championship",
+            "organization": "One Championship",
             "title": event.name,
             "date": event.begin.isoformat(),
             "description": event.description.split("\n\n")[1:-1] if event.description else [],
