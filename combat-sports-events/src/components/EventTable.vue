@@ -558,6 +558,7 @@ table.time-info-table td {
 }
 
 .month-display {
+    color: rgba(235, 235, 235, 0.64) !important;
     position: relative;
     min-width: 150px;
     text-align: center;

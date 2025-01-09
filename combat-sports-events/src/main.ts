@@ -39,6 +39,7 @@ app.use(PrimeVue, {
         options: {
             prefix: 'p',
             cssLayer: false,
+            darkModeSelector: '.darkmode',
         }
     }
 });
