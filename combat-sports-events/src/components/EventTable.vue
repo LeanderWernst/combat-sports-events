@@ -292,13 +292,36 @@ const prevPage = () => {
         currentPage.value--;
     }
 };
+
+const todayPage = () => {
+    if (currentMonthIndex.value !== -1) {
+        currentPage.value = currentMonthIndex.value;
+        selectNextUpcomingEvent();
+    }
+}
+
+const hovering = ref(false);
 </script>
 <template>
     <!-- Paginator -->
     <div v-if="groupedEvents.length > 0" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 16px;">
         <Button icon="pi pi-chevron-left" @click="prevPage" :disabled="currentPage === 0" text rounded />
-        <span style="min-width: 150px ; text-align: center; font-size: 1rem;">
-            {{ currentMonthYear }}
+        <span
+            class="month-display"
+            @mouseenter="hovering = true"
+            @mouseleave="hovering = false"
+            @click="todayPage"
+        >
+            <transition name="slide">
+                <span v-if="hovering" key="hovering" class="text-wrapper">
+                    <i class="pi pi-undo"></i> CURRENT MONTH
+                </span>
+            </transition>
+            <transition name="slide">
+                <span v-if="!hovering" key="not-hovering" class="text-wrapper">
+                    {{ currentMonthYear.toUpperCase() }}
+                </span>
+            </transition>
         </span>
         <Button icon="pi pi-chevron-right" @click="nextPage" :disabled="currentPage === groupedEvents.length - 1" text
             rounded />
@@ -538,5 +561,44 @@ table.time-info-table td {
 
 :deep(.p-button-text.p-button-info:not(:disabled):hover) {
     color: rgba(235, 235, 235, 0.64);
+}
+
+.month-display {
+    position: relative;
+    min-width: 150px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.7rem;
+    overflow: hidden;
+}
+.text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.slide-enter-active {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.slide-leave-active {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.slide-enter-from {
+    transform: translate(-50%, 100%); /* Startposition: Unterhalb des Containers */
+    opacity: 0;
+}
+.slide-enter-to {
+    transform: translate(-50%, 0); /* Zielposition: Vollständig sichtbar */
+    opacity: 1;
+}
+.slide-leave-from {
+    transform: translate(-50%, 0); /* Ausgangsposition: Vollständig sichtbar */
+    opacity: 1;
+}
+.slide-leave-to {
+    transform: translate(-50%, 100%); /* Endposition: Oberhalb des Containers */
+    opacity: 0;
 }
 </style>
