@@ -308,7 +308,7 @@ const disableHover = () => {
         >
             <transition name="slide">
                 <span v-if="hoveringMonth" key="hoveringMonth" class="text-wrapper">
-                    <i class="pi pi-undo"></i> CURRENT MONTH
+                    <i class="pi pi-undo"></i> THIS MONTH
                 </span>
             </transition>
             <transition name="slide">
