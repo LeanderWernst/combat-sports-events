@@ -48,22 +48,8 @@ const allSelected = ref(false);
 const hour12 = ref(false);
 const darkmode = ref(false);
 const isSmallScreen = ref(false);
-const menu = ref();
-const items = ref([
-    {
-        label: 'Filter',
-        items: [
-            {
-                label: 'Refresh',
-                icon: 'pi pi-refresh'
-            },
-            {
-                label: 'Export',
-                icon: 'pi pi-upload'
-            }
-        ]
-    }
-]);
+const hoveringMonth = ref(false);
+const isTouchDevice = ref(false);
 
 const loadJSON = async (file: string) => {
     try {
@@ -94,8 +80,6 @@ const loadJSON = async (file: string) => {
         console.error("Unexpected error during JSON loading:", error);
     }
 };
-
-
 
 const groupedEvents = computed(() => {
     const groups = new Map<string, CombatEvent[]>();
@@ -300,7 +284,17 @@ const todayPage = () => {
     }
 }
 
-const hovering = ref(false);
+const detectTouchDevice = () => {
+    isTouchDevice.value = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+};
+
+const enableHover = () => {
+    if (!isTouchDevice.value) hoveringMonth.value = true;
+};
+
+const disableHover = () => {
+    if (!isTouchDevice.value) hoveringMonth.value = false;
+};
 </script>
 <template>
     <!-- Paginator -->
@@ -308,17 +302,17 @@ const hovering = ref(false);
         <Button icon="pi pi-chevron-left" @click="prevPage" :disabled="currentPage === 0" text rounded />
         <span
             class="month-display"
-            @mouseenter="hovering = true"
-            @mouseleave="hovering = false"
+            @mouseenter="enableHover"
+            @mouseleave="disableHover"
             @click="todayPage"
         >
             <transition name="slide">
-                <span v-if="hovering" key="hovering" class="text-wrapper">
+                <span v-if="hoveringMonth" key="hoveringMonth" class="text-wrapper">
                     <i class="pi pi-undo"></i> CURRENT MONTH
                 </span>
             </transition>
             <transition name="slide">
-                <span v-if="!hovering" key="not-hovering" class="text-wrapper">
+                <span v-if="!hoveringMonth" key="not-hoveringMonth" class="text-wrapper">
                     {{ currentMonthYear.toUpperCase() }}
                 </span>
             </transition>
