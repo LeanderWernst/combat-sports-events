@@ -164,7 +164,10 @@ const selectNextUpcomingEvent = () => {
         const mainEnd = new Date(event.cards.main_card!.end!);
 
         // calculate and save the smallest time difference to future event
-        if (mainStart >= now && mainEnd > now) {
+        if (mainStart <= now && mainEnd > now) {
+            nextEvent = event;
+            break;
+        } else if (mainStart >= now && mainEnd > now) {
             const timeDifference = mainStart.getTime() - now.getTime();
             if (timeDifference < minTimeDifference) {
                 nextEvent = event;
