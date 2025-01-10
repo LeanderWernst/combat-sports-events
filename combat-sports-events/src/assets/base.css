@@ -148,7 +148,8 @@ html::before {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
+  /* touch-action: manipulation; */
 }
 
 body {
@@ -170,6 +171,15 @@ body {
     font-size: 12px;
   }
   div.popover_container button {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 575px) {
+  .landscape-hidden {
+      display: none !important;
+  }
+  body {
     font-size: 12px;
   }
 }

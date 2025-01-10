@@ -20,6 +20,6 @@ h1 {
   letter-spacing: 4px;
   color: whitesmoke;
   line-height: normal;
-  margin-top: 25px;
+  margin-top: 1%;
 }
 </style>

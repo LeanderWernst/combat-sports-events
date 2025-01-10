@@ -9,6 +9,7 @@ import Menu from 'primevue/menu';
 import ical from 'ical';
 import 'primeicons/primeicons.css';
 import { FilterMatchMode } from '@primevue/core/api';
+import { ConnectedOverlayScrollHandler } from '@primevue/core';
 
 interface CombatEvent {
   url: string;
@@ -188,8 +189,8 @@ onMounted(async () => {
 
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
-
-    //setUniformRowHeight();
+    
+    detectTouchDevice();
 });
 
 onBeforeUnmount(() => {
@@ -285,7 +286,7 @@ const todayPage = () => {
 }
 
 const detectTouchDevice = () => {
-    isTouchDevice.value = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    isTouchDevice.value = matchMedia("(pointer: coarse)").matches || matchMedia("(pointer: none)").matches || 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 };
 
 const enableHover = () => {
@@ -298,14 +299,9 @@ const disableHover = () => {
 </script>
 <template>
     <!-- Paginator -->
-    <div v-if="groupedEvents.length > 0" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 16px;">
+    <div v-if="groupedEvents.length > 0" class="paginator">
         <Button icon="pi pi-chevron-left" @click="prevPage" :disabled="currentPage === 0" text rounded />
-        <span
-            class="month-display"
-            @mouseenter="enableHover"
-            @mouseleave="disableHover"
-            @click="todayPage"
-        >
+        <span class="month-display" @mouseenter="enableHover" @mouseleave="disableHover" @click="todayPage">
             <transition name="slide">
                 <span v-if="hoveringMonth" key="hoveringMonth" class="text-wrapper">
                     <i class="pi pi-undo"></i> THIS MONTH
@@ -317,8 +313,7 @@ const disableHover = () => {
                 </span>
             </transition>
         </span>
-        <Button icon="pi pi-chevron-right" @click="nextPage" :disabled="currentPage === groupedEvents.length - 1" text
-            rounded />
+        <Button icon="pi pi-chevron-right" @click="nextPage" :disabled="currentPage === groupedEvents.length - 1" text rounded />
     </div>
 
     <!-- Filter Button -->
@@ -364,7 +359,7 @@ const disableHover = () => {
         sortField="cards.main_card.start"
         :sortOrder="1"
         scrollable
-        scrollHeight="65vh"
+        scrollHeight="65dvh"
     >
         <!-- Paginator Container -->
         <Column expander style="width: 3%; text-align: center;" >
@@ -459,6 +454,14 @@ a:hover {
     background-color: rgba(150, 149, 150, 0.2);
 }
 
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
 .filter-panel {
     display: flex;
     flex-direction: column;
@@ -474,7 +477,9 @@ a:hover {
 }
 
 .filter-button {
-    border-radius: 25px;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
     background-color: rgb(207, 27, 3);
     border-color: rgb(207, 27, 3);
     color: white;
@@ -509,6 +514,10 @@ table.time-info-table td {
     --p-datatable-body-cell-selected-border-color: #a4131370;
 }
 
+.p-datatable {
+    flex: 1;
+}
+
 :deep(.p-datatable-table-container) {
     border-radius: 25px;
 }
@@ -520,9 +529,28 @@ table.time-info-table td {
     border-color: rgba(24, 24, 27, 0.4);
 }
 
-:deep(.p-datatable-column-sorted),
-:deep(.p-datatable-selectable-row) {
-    height: 75px;
+/* :deep(.p-datatable-column-sorted), */
+:deep(.p-datatable-selectable-row){
+    height: 65px;
+}
+:deep(.p-datatable-selectable-row > td) {
+    padding: 0 10px !important;
+}
+@media (max-height: 575px) {
+    :deep(.p-datatable-selectable-row){
+        height: 0;
+    }
+    :deep(.p-datatable-thead th){
+        padding: 0 10px !important;
+    }
+    .filter-button, .filter-button:hover, :deep(.p-button:not(:disabled):hover) {
+        color: white;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .paginator {
+        margin-bottom: 0;
+    }
 }
 
 :deep(.p-datatable-thead > tr > th:first-child > div) {
