@@ -308,11 +308,11 @@
       "Maemmot Sor Salacheep vs. Satangthong Chor Hapayak | Muay Thai | Catchweight",
       "Yodkitti FiatPathum vs. Thway Lin Htet | Muay Thai | Strawweight",
       "Chalie Singha Mawynn vs. Rocky Wor Wantawee | Muay Thai | Catchweight",
-      "Petninmungkorn Captainkaneboxing vs. Rifdean Masdor | Muay Thai | Atomweight",
+      "Petninmungkorn NamkangIceland vs. Rifdean Masdor | Muay Thai | Atomweight",
       "Petlampun Muadablampang vs. Abdallah Ondash | Muay Thai | Catchweight",
       "Tahaneak Nayokatasala vs. Andrii Mezentsev | Muay Thai | Catchweight",
       "Islay Erika Bomogao vs. Ran Longshu | Muay Thai | Catchweight",
-      "Antonio Piana vs. Haruyuki Tanitsu | Muay Thai | Catchweight",
+      "Thailandlek Sor Rungsak vs. Haruyuki Tanitsu | Muay Thai | Catchweight",
       "Dzhabir Dzhabrailov vs. Khusan Urakov | Mixed Martial Arts | Catchweight",
       "Oh Su Hwan vs. Nachyn Sat | Mixed Martial Arts | Featherweight"
     ],
@@ -330,13 +330,1025 @@
     "cards": {
       "main_card": {
         "start": "2025-01-10T12:30:00+00:00",
-        "end": "2025-01-10T18:30:00+00:00"
+        "end": "2025-01-10T16:43:19+00:00"
       },
       "prelims": {
         "start": null,
         "end": null
       }
     },
-    "last_updated": "2025-01-08T20:40:14.449104+00:00Z"
+    "last_updated": "2025-05-07T21:49:58.995316+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-35",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 36",
+    "date": "2025-10-04T01:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-10-04T01:00:00+00:00",
+        "end": "2025-10-04T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995702+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-34",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 35",
+    "date": "2025-09-06T01:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-09-06T01:00:00+00:00",
+        "end": "2025-09-06T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995005+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-33",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 33",
+    "date": "2025-07-12T01:00:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-07-12T01:00:00+00:00",
+        "end": "2025-07-12T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995270+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-fight-night-32",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 32",
+    "date": "2025-06-07T01:00:00+00:00",
+    "description": [
+      "Nakrob Fairtex vs. Jaosuayai Mor Krungthepthonburi | Muay Thai | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-06-07T01:00:00+00:00",
+        "end": "2025-06-07T07:00:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995680+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-107",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 107",
+    "date": "2025-05-09T12:30:00+00:00",
+    "description": [],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-05-09T12:30:00+00:00",
+        "end": "2025-05-09T18:30:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995489+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/onefightnight31",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 31",
+    "date": "2025-05-03T01:00:00+00:00",
+    "description": [
+      "Kongthoranee Sor Sommai vs. Nong-O Hama | Muay Thai | Flyweight",
+      "Tye Ruotolo vs. Dante Leon | Welterweight World Championship",
+      "Liam Nolan vs. Abolfazl Alipourandi | Muay Thai | Lightweight",
+      "Zhang Lipeng vs. Lucas Gabriel | Mixed Martial Arts | Lightweight",
+      "Saemapetch Fairtex vs. Abdulla Dayakaev | Muay Thai | Bantamweight",
+      "Sean Climaco vs. Akif Guluzada | Muay Thai | Flyweight",
+      "Jordan  Estupinan vs. Ali Saldoev | Muay Thai | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-05-03T01:00:00+00:00",
+        "end": "2025-05-03T04:13:35+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995079+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-106",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 106",
+    "date": "2025-05-02T12:30:00+00:00",
+    "description": [
+      "Panrit Lukjaomaesaiwaree vs. Suksawat PK Saenchai | Muay Thai | Catchweight",
+      "Petbanrai Singha Mawynn vs. Banluelok Sitwatcharachai | Muay Thai | Catchweight",
+      "Chalamdam Sor Boonmeerit vs. Suesat Manop Gym | Muay Thai | Strawweight",
+      "Petphupa Aekpujean vs. Chattawee NayokJoyprajin | Muay Thai | Catchweight",
+      "Yodseksan Rodsuayjajed vs. Sein Lone Chaw | Muay Thai | Flyweight",
+      "Khunpon Or AudUdon vs. Abdessamie Rhenimi | Muay Thai | Strawweight",
+      "Rustam Yunusov vs. Alfie Ponting | Muay Thai | Flyweight",
+      "Khasan Salomov vs. Payakrut Suajantokmuaythai | Muay Thai | Strawweight",
+      "Silviu Vitez vs. Tomoki Sato | Muay Thai | Flyweight",
+      "Chayan Oorzhak vs. Eubert Gomez | Mixed Martial Arts | Flyweight",
+      "Koshen Akanov vs. Valerii Gusarov | Mixed Martial Arts | Bantamweight",
+      "Sheng Yi Yang vs. Shuri Sakayori | Kickboxing | Catchweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-05-02T12:30:00+00:00",
+        "end": "2025-05-02T16:23:49+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995580+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-105",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 105",
+    "date": "2025-04-18T12:30:00+00:00",
+    "description": [
+      "Kongsuk Fairtex vs. Lamnamoonlek Tded99  | Muay Thai | Catchweight",
+      "Buakhiao Por Paoin vs. Jakub Poslowski | Muay Thai | Catchweight",
+      "Kaotaem Fairtex vs. Tuanthong Paesaisi | Muay Thai | Catchweight",
+      "Ubaid Hussain vs. Khusen Salomov | Muay Thai | Catchweight",
+      "Petwanghin Lookpayakraipakdee vs. Jaradchai Maxjandee | Muay Thai | Flyweight",
+      "Fahlikit NayokJoyprajin vs. Nuengthoranee Por Homklin | Muay Thai | Catchweight",
+      "Liu Mengyang vs. Mohammad Siasarani | Kickboxing | Featherweight",
+      "Riedzwan Norsyahmie vs. Shota Tezuka | Muay Thai | Catchweight",
+      "Maisangngern Sor Yingcharoenkarnchang vs. Issei Yonaha | Muay Thai | Catchweight",
+      "Ivan Bondarchuk vs. Abdulgadzhi Gaziev | Mixed Martial Arts | Featherweight",
+      "Rodrigo Marello vs. Denny Sisti | Submission Grappling | Bantamweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-04-18T12:30:00+00:00",
+        "end": "2025-04-18T16:28:50+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995632+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-104",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 104",
+    "date": "2025-04-11T12:30:00+00:00",
+    "description": [
+      "Chartpayak Saksatoon vs. Kompet Fairtex | Muay Thai | Strawweight",
+      "Sanpet Sor Salacheep vs. Satangthong Chor Hapayak | Muay Thai | Catchweight",
+      "Isannuea Tor Tanjaroen vs. Decho Por Borirak | Muay Thai | Catchweight",
+      "Petlampun Muadablampang vs. Kritpet PK Saenchai | Muay Thai | Catchweight",
+      "Khunsuk Mor Krungthepthonburi  vs. Pet Suanluangrodyok | Muay Thai | Catchweight",
+      "Petninmungkorn NamkangIceland vs. Kochasit Tasaeyasat | Muay Thai | Atomweight",
+      "Sonrak Fairtex vs. Khunponnoi Sor Sommai | Muay Thai | Flyweight",
+      "Stella Hemetsberger vs. Vanessa Romanowski | Muay Thai | Strawweight",
+      "Angel Bauza vs. Zohir Remidi | Muay Thai | Featherweight",
+      "Alber Da Silva vs. Hiroki Naruo | Kickboxing | Catchweight",
+      "Konstantin Marareskul vs. Ramazan Suleymanov | Mixed Martial Arts | Featherweight",
+      "Ezekiel Isidro vs. Tsukasa Mizoguchi | Mixed Martial Arts | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-04-11T12:30:00+00:00",
+        "end": "2025-04-11T16:35:20+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995607+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/onefightnight30",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 30",
+    "date": "2025-04-05T00:00:00+00:00",
+    "description": [
+      "Roman Kryklia vs. Lyndon  Knowles | Heavyweight World Championship",
+      "Regian Eersel vs. Alexis Nicolas | Lightweight World Championship",
+      "Sitthichai Sitsongpeenong vs. Nico Carrillo | Muay Thai | Featherweight",
+      "Seksan  Or Kwanmuang vs. Asa Ten Pow | Muay Thai | Catchweight",
+      "Sanzhar Zakirov vs. Bokang Masunyane | Mixed Martial Arts | Flyweight",
+      "George Jarvis vs. Mouhcine Chafi | Muay Thai | Lightweight",
+      "Paul Elliott vs. Ryugo Takeuchi | Mixed Martial Arts | Heavyweight",
+      "Fabricio Andrey vs. Ashley Williams | Submission Grappling | Featherweight",
+      "Thongpoon PK Saenchai vs.  Elmehdi  El Jamari | Muay Thai | Strawweight",
+      "Jihin Radzuan vs. Macarena Aragon | Mixed Martial Arts | Atomweight",
+      "Carlo Bumina-ang vs. Mauro Mastromarini | Mixed Martial Arts | Bantamweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-04-05T00:00:00+00:00",
+        "end": "2025-04-05T04:30:50+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.994981+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-103",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 103",
+    "date": "2025-04-04T12:30:00+00:00",
+    "description": [
+      "Kulabdam Sor Jor Piek Uthai vs. Ferzan Cicek | Muay Thai | Catchweight",
+      "Watcharaphon PK Saenchai vs. Mungkorn Boomdeksean | Muay Thai | Catchweight",
+      "Pansak Wor Wantawee vs. Palangboon Wor Santai | Muay Thai | Catchweight",
+      "Xavier Gonzalez vs. Walter Goncalves | Muay Thai | Catchweight",
+      "Hern NF Looksuan vs. Fahjarat Sor Dechapan | Muay Thai | Catchweight",
+      "Pettasuea Seeopal vs. Suajan Sor Isarachot | Muay Thai | Catchweight",
+      "Kendu Irving vs. Avatar PK Saenchai | Muay Thai | Bantamweight",
+      "Boonlert Sor Boonmeerit vs. Hakim Bah | Muay Thai | Catchweight",
+      "Yangdam Jitmuangnon vs. Face Erawan | Muay Thai | Catchweight",
+      "Tsz Ching Phoebe Lo vs. Fuyuka | Kickboxing | Atomweight",
+      "Harlysson Nunes vs. Lucas Ganin | Mixed Martial Arts | Bantamweight",
+      "Fritz Biagtan vs. Edson Machavane | Mixed Martial Arts | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-04-04T12:30:00+00:00",
+        "end": "2025-04-04T16:28:39+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995727+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-102",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 102",
+    "date": "2025-03-28T12:30:00+00:00",
+    "description": [
+      "Rambong Sor Therapat vs. Pompet PK Saenchai | Muay Thai | Catchweight",
+      "Dedduanglek Wankhongohm MBK vs. Pettonglor Sitluangpeenumfon | Muay Thai | Flyweight",
+      "Korpai Sor Yingcharoenkarnchang vs. Jaopuenyai Kiatkongkreangkrai | Muay Thai | Catchweight",
+      "Rocky Kangaroo Muaythai vs. Tang Qiqin | Muay Thai | Catchweight",
+      "Nehramit Annymuaythai vs. Petpasak Sor Salacheep | Muay Thai | Atomweight",
+      "Khunpon Or AudUdon vs. Kraithong PU Phabai | Muay Thai | Catchweight",
+      "Islay Erika Bomogao vs. Nerea Rubio | Muay Thai | Catchweight",
+      "Rudy Da Silva vs. Kenan Bayramov | Muay Thai | Catchweight",
+      "Pol Pascual vs. Takuma Ota | Muay Thai | Catchweight",
+      "Liu Junchao vs. Akito Nakashima | Kickboxing | Strawweight",
+      "Marwin Quirante vs. Torepchi Dongak | Mixed Martial Arts | Strawweight",
+      "Jean Claude Saclag vs. Shazada Ataev | Mixed Martial Arts | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-28T12:30:00+00:00",
+        "end": "2025-03-28T18:30:00+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995341+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one172",
+    "organization": "One Championship",
+    "title": "ONE 172: Takeru vs. Rodtang",
+    "date": "2025-03-23T07:00:00+00:00",
+    "description": [
+      "Rodtang Jitmuangnon vs. Takeru Segawa | Kickboxing | Flyweight",
+      "Tawanchai vs. Masaaki Noiri | Interim Featherweight World Championship",
+      "Adriano Moraes vs. Yuya Wakamatsu | Flyweight World Championship",
+      "Jonathan  Di Bella vs. Sam-A Gaiyanghadao | Interim Strawweight World Championship",
+      "Phetjeeja vs. Kana Morimoto | Atomweight World Championship",
+      "Superlek Kiatmoo9 vs. Nabil Anane | Muay Thai | Bantamweight",
+      "Rak  Erawan vs. Nadaka Yoshinari | Muay Thai | Atomweight",
+      "Eduard Folayang vs. Shinya Aoki | Mixed Martial Arts | Lightweight",
+      "John Lineker  vs. Hiroki Akimoto | Kickboxing | Bantamweight",
+      "Adrian Lee vs. Takeharu  Ogawa | Mixed Martial Arts | Lightweight",
+      "Yodlekpet Or Atchariya vs. Shimon Yoshinari | Muay Thai | Flyweight",
+      "Zakaria El Jamari vs. Hyu Iwata | Kickboxing | Flyweight",
+      "Suriyanlek Por Yenying vs. Ryusei | Kickboxing | Catchweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Saitama Super Arena, Saitama",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-23T07:00:00+00:00",
+        "end": "2025-03-23T12:55:20+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995440+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-101",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 101",
+    "date": "2025-03-21T12:30:00+00:00",
+    "description": [
+      "Nakrob Fairtex vs. Puengluang Baanramba | Muay Thai | Flyweight",
+      "Chokpreecha PK Saenchai vs. Chalamdam Sor Boonmeerit | Muay Thai | Strawweight",
+      "Khunsuek Superbon Training Camp vs. G'Anijonov Muhlisbek | Muay Thai | Featherweight",
+      "Petwichit Singha Mawynn vs. Yok Sit Sorros | Muay Thai | Catchweight",
+      "Sunday Boomdeksean vs. Numsurin Chor Ketwina | Muay Thai | Catchweight",
+      "Rocky Wor Wantawee vs. Thway Lin Htet | Muay Thai | Strawweight",
+      "Ahavat Gordon vs. Eh Mwi | Muay Thai | Flyweight",
+      "Enzo Clarisse vs. Rui Kakizaki | Kickboxing | Catchweight",
+      "Dionatha Santos Tobias vs. Kongpoxay LaoLaneXang | Muay Thai | Catchweight",
+      "Gabriele Moram vs. Nefise Delikurt | Muay Thai | Catchweight",
+      "Carlos Alvarez vs. Seiya Matsuda | Mixed Martial Arts | Featherweight",
+      "Monjit Yein vs. Justin Jones Matoto | Mixed Martial Arts | Strawweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-21T12:30:00+00:00",
+        "end": "2025-03-21T16:34:12+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995105+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-100",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 100",
+    "date": "2025-03-14T12:30:00+00:00",
+    "description": [
+      "Muangthai  PK Saenchai vs. Ibragim Abdulmedzhidov | Muay Thai | Catchweight",
+      "Sinsamut Klinmee vs. Nieky Holzken | Kickboxing | Catchweight",
+      "Suakim Sor Jor Tongprajin vs. Komawut FA Group | Muay Thai | Catchweight",
+      "Jaosuayai Mor Krungthepthonburi vs. Denis Puric | Muay Thai | Flyweight",
+      "Panpayak Jitmuangnon vs. Majid Seydali | Muay Thai | Flyweight",
+      "Shadow Singha Mawynn vs. Hassan Vahdanirad | Muay Thai | Featherweight",
+      "Sangarthit Looksaikongdin vs. Super Yay Chan | Kickboxing | Catchweight",
+      "Sornsueknoi FA Group vs. Stephen Irvine | Muay Thai | Catchweight",
+      "Songchainoi Kiatsongrit vs. Teeyai Wankhongohm MBK | Muay Thai | Catchweight",
+      "Xiong Jing Nan vs. Meng Bo | Mixed Martial Arts | Atomweight",
+      "Ali Koyuncu vs. Yota Shigemori | Muay Thai | Catchweight",
+      "Jang Seon Gyu vs. Katsuaki Aoyagi | Mixed Martial Arts | Bantamweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-14T12:30:00+00:00",
+        "end": "2025-03-14T16:57:39+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995177+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/onefightnight29",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 29: Rodrigues vs. McManamon",
+    "date": "2025-03-08T01:00:00+00:00",
+    "description": [
+      "Allycia Hellen Rodrigues vs. Marie McManamon | Atomweight World Championship",
+      "Rambolek Chor Ajalaboon vs. Parham Gheirati | Muay Thai | Catchweight",
+      "Soe Lin Oo vs. Dmitrii Kovtun | Muay Thai | Catchweight",
+      "Shamil   Erdogan vs. Gilberto Galvao | Mixed Martial Arts | Light Heavyweight",
+      "Enkh-Orgil Baatarkhuu vs. Jeremy Pacatiw | Mixed Martial Arts | Bantamweight",
+      "Yu  Yau Pui vs. Martyna  Kierczynska | Muay Thai | Atomweight",
+      "Eko Roni Saputra vs. Sanzhar Zakirov | Mixed Martial Arts | Catchweight",
+      "Arian  Esparza vs. Nontachai Jitmuangnon | Muay Thai | Featherweight",
+      "Banma Duoji vs. Joshua Perreira | Mixed Martial Arts | Flyweight",
+      "Diogo Reis vs. Shoya Ishiguro | Submission Grappling | Catchweight",
+      "Stefan  Korodi vs. Katsuki Kitano | Muay Thai | Catchweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-08T01:00:00+00:00",
+        "end": "2025-03-08T05:18:24+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995797+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-99",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 99",
+    "date": "2025-03-07T12:30:00+00:00",
+    "description": [
+      "Yod-IQ Or Pimolsri vs. Petru Morari | Muay Thai | Bantamweight",
+      "Lamsing Sor Dechapan vs. Ngaopayak Adsanpatong | Muay Thai | Catchweight",
+      "Sirichok Sor Sommai vs. Lothong Kruaynaimuanggym | Muay Thai | Catchweight",
+      "Wuttikrai Wor Chakrawut vs. Changthong M U Den | Muay Thai | Flyweight",
+      "Petmuangthai Sor Naruemon vs. Chathai Bang Saen Fight Club | Muay Thai | Atomweight",
+      "Nongfahsai TOP PK Saenchai vs. Tangtang Suansunandhagym | Muay Thai | Catchweight",
+      "Worapon Sor Dechapan vs. Soner Sen | Muay Thai | Catchweight",
+      "Petpattaya Silkmuaythai vs. Ikko Ota | Muay Thai | Catchweight",
+      "Thet Paing Aung vs. Haruyuki Tanitsu | Muay Thai | Catchweight",
+      "Stella Hemetsberger vs. Anna Lia Moretti | Kickboxing | Strawweight",
+      "Kevin Church vs. Ivan Gnizditskiy | Mixed Martial Arts | Middleweight",
+      "Antonio  Mammarella vs. Oliver Axelsson | Mixed Martial Arts | Lightweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-03-07T12:30:00+00:00",
+        "end": "2025-03-07T16:40:17+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995129+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-98",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 98",
+    "date": "2025-02-28T12:30:00+00:00",
+    "description": [
+      "Chartpayak Saksatoon vs. Kongchai Chanaidonmueang  | Muay Thai | Strawweight",
+      "Krisana Daodenmuaythai vs. Antar Kacem | Muay Thai | Catchweight",
+      "Sonrak Fairtex vs. Joachim Ouraghi | Muay Thai | Flyweight",
+      "Teeyai PK Saenchai vs. Paeyim Sor Boonmeerit | Muay Thai | Catchweight",
+      "Khundet PK Saenchai vs. Nong Oh LaoLaneXang | Muay Thai | Catchweight",
+      "Chabakaew Sor KanJanchai vs. Gusjung Fairtex | Muay Thai | Catchweight",
+      "Mohamed Taoufyq vs. Asadula Imangazaliev | Muay Thai | Flyweight",
+      "Marvin Dittrich vs. Nongbia LaoLaneXang | Muay Thai | Atomweight",
+      "Seksan Fairtex vs. Zhang Jinhu | Muay Thai | Flyweight",
+      "Lu Yifu vs. Issei Yonaha | Muay Thai | Catchweight",
+      "Avazbek Kholmirzaev vs. Bolat Zamanbekov | Mixed Martial Arts | Catchweight",
+      "Sumit Bhyan vs. Connor Tymon | Mixed Martial Arts | Lightweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-28T12:30:00+00:00",
+        "end": "2025-02-28T16:36:35+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995411+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one171",
+    "organization": "One Championship",
+    "title": "ONE 171: Qatar",
+    "date": "2025-02-20T15:00:00+00:00",
+    "description": [
+      "Joshua Pacio vs. Jarred Brooks | Strawweight World Championship",
+      "Jonathan Haggerty vs. Wei Rui | Bantamweight World Championship",
+      "Dagi Arslanaliev vs. Roberto Soldic | Mixed Martial Arts | Welterweight",
+      "Shamil   Erdogan vs. Aung La N Sang | Mixed Martial Arts | Catchweight",
+      "Shamil Gasanov vs. Martin Nguyen | Mixed Martial Arts | Featherweight",
+      "Bibiano Fernandes vs. Kevin Belingon | Mixed Martial Arts | Bantamweight",
+      "Mauro Cerilli vs. Kirill Grishenko | Mixed Martial Arts | Heavyweight",
+      "Jake Peacock vs. Shinji Suzuki | Muay Thai | Bantamweight",
+      "Ayaka Miura vs. Ritu Phogat | Mixed Martial Arts | Atomweight",
+      "Kade Ruotolo vs. Nicolas Vigna | Mixed Martial Arts | Catchweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lusail Sports Arena, Lusail",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-20T15:00:00+00:00",
+        "end": "2025-02-20T19:37:53+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995153+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-97",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 97",
+    "date": "2025-02-14T12:30:00+00:00",
+    "description": [
+      "Kongsuk Fairtex vs. Lamnamoonlek Tded99  | Muay Thai | Catchweight",
+      "Dmitry Menshikov vs. Tengnueng Fairtex | Muay Thai | Lightweight",
+      "Kompet Fairtex vs. Theptaksin Sor Sornsing | Muay Thai | Catchweight",
+      "Denkriangkrai Singha Mawynn vs. Tomyamkoong Bhumjaithai | Muay Thai | Catchweight",
+      "Tonglampoon FA Group vs. Mungkorn Boomdeksean | Muay Thai | Catchweight",
+      "Chatpichit Sor Sor Toipadriew vs. Nittikorn JP Power | Muay Thai | Catchweight",
+      "Vero vs. Francisca Vera | Muay Thai | Atomweight",
+      "Khunponnoi Sor Sommai vs. Chartmungkorn Chor Hapayak | Muay Thai | Flyweight",
+      "Junior Fairtex vs. Emily Chong | Muay Thai | Atomweight",
+      "Grandprixnoi PK Saenchai vs. Tomioka Yusei | Muay Thai | Catchweight",
+      "Jayson Miralpez vs. Ryuya Hatakeyama | Mixed Martial Arts | Strawweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-14T12:30:00+00:00",
+        "end": "2025-02-14T16:27:30+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995031+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/onefightnight28",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 28: Prajanchai vs. Barboza",
+    "date": "2025-02-08T01:00:00+00:00",
+    "description": [
+      "Prajanchai PK Saenchai vs. Ellis Badr Barboza | Strawweight World Championship",
+      "Kongthoranee Sor Sommai vs. Nong-O Hama | Muay Thai | Flyweight",
+      "Hiroyuki Tetsuka vs. Zhang Lipeng | Mixed Martial Arts | Catchweight",
+      "Sean Climaco vs. Diego Paez | Muay Thai | Flyweight",
+      "Lito Adiwang vs. Keito Yamakita | Mixed Martial Arts | Strawweight",
+      "Felipe Lobo vs. Saemapetch Fairtex | Muay Thai | Bantamweight",
+      "Jeremy Miado vs. Gilbert Nakatani | Mixed Martial Arts | Flyweight",
+      "Carlo Bumina-ang vs. Song Min Jong | Mixed Martial Arts | Bantamweight",
+      "Gabriel  Sousa vs. Gianni Grippo | Submission Grappling | Featherweight",
+      "Aliff Sor Dechapan vs. Shamil Adukhov | Muay Thai | Strawweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-08T01:00:00+00:00",
+        "end": "2025-02-08T05:04:15+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995365+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-96",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 96",
+    "date": "2025-02-07T12:30:00+00:00",
+    "description": [
+      "Komawut FA Group vs. Panrit Lukjaomaesaiwaree | Muay Thai | Catchweight",
+      "Singdomthong Nokjeanladkrabang vs. Nuapet Tded99 | Muay Thai | Catchweight",
+      "Donking Yotharakmuaythai vs. Denpayak Detpetchsrithong | Muay Thai | Flyweight",
+      "Brazil M Eakchat vs. Singtanawat Nokjeanladkrabang | Muay Thai | Catchweight",
+      "Nahyan Mohammed vs. Petnoppadet Noppadetmuaythai | Muay Thai | Catchweight",
+      "Tuangsap Sor Salacheep vs. Khunkrai PK Saenchai | Muay Thai | Catchweight",
+      "Alessio Malatesta vs. Abdulla Dayakaev | Muay Thai | Bantamweight",
+      "Petnamkhong Mongkolpet vs. Kaenpitak NhongBangsai | Muay Thai | Catchweight",
+      "Leandro Miranda vs. Hyu Iwata | Kickboxing | Flyweight",
+      "Maxime Combes vs. Enzo Clarisse | Muay Thai | Catchweight",
+      "Wang Yuhan vs. Ryuki Kawano | Kickboxing | Catchweight",
+      "Jean Carlos Pereira vs. Mansur Gitinov | Mixed Martial Arts | Lightweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-02-07T12:30:00+00:00",
+        "end": "2025-02-07T16:31:05+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.994857+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-95",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 95",
+    "date": "2025-01-31T12:30:00+00:00",
+    "description": [
+      "Yodlekpet Or Atchariya vs. Jaosuayai Mor Krungthepthonburi | Muay Thai | Flyweight",
+      "Pataknin Sinbimuaythai vs. Chalamdam Sor Boonmeerit | Muay Thai | Strawweight",
+      "Samingdam NF Looksuan vs. Moe Htet Aung | Muay Thai | Catchweight",
+      "Dunk Lukporphrayasua vs. Super Yay Chan | Muay Thai | Catchweight",
+      "Padejsuk NF Looksuan vs. Danila Vasilikhin | Muay Thai | Catchweight",
+      "Fahjarat Sor Dechapan vs. Jaroenporn TaiKubon | Muay Thai | Catchweight",
+      "Kiamran Nabati vs. Ferrari Fairtex | Muay Thai | Bantamweight",
+      "Mustafa Al Tekreeti vs. Eduard Saik | Muay Thai | Lightweight",
+      "Eh Mwi vs. Muga Seto | Muay Thai | Catchweight",
+      "Moa Carlsson vs. Kana Morimoto | Kickboxing | Atomweight",
+      "Robson de Oliveira vs. Kohei Wakabayashi | Mixed Martial Arts | Strawweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-31T12:30:00+00:00",
+        "end": "2025-01-31T16:24:37+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995465+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one170",
+    "organization": "One Championship",
+    "title": "ONE 170",
+    "date": "2025-01-24T11:30:00+00:00",
+    "description": [
+      "Tawanchai vs. Superbon | Featherweight World Championship",
+      "Fabricio Andrade vs. Kwon Won Il | Bantamweight World Championship",
+      "Nico Carrillo vs. Nabil Anane | Interim Bantamweight World Championship",
+      "Seksan  Or Kwanmuang vs. Soe Lin Oo | Muay Thai | Catchweight",
+      "Jo Nattawut vs. Bampara Kouyate | Muay Thai | Featherweight",
+      "Sinsamut Klinmee vs. Nauzet  Trujillo | Muay Thai | Lightweight",
+      "Johan Ghazali vs. Johan Estupinan | Muay Thai | Flyweight",
+      "Maurice  Abevi vs. Samat Mamedov | Mixed Martial Arts | Catchweight",
+      "Marcelo Garcia vs. Masakazu Imanari | Submission Grappling | Openweight",
+      "Shakir Al-Tekreeti vs. Masaaki Noiri | Kickboxing | Featherweight",
+      "Suriyanlek Por Yenying vs. Thant Zin | Muay Thai | Catchweight",
+      "Freddie Haggerty vs. Jordan  Estupinan | Muay Thai | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Impact Arena, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-24T11:30:00+00:00",
+        "end": "2025-01-24T16:30:44+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995200+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/one-friday-fights-94",
+    "organization": "One Championship",
+    "title": "ONE Friday Fights 94",
+    "date": "2025-01-17T12:30:00+00:00",
+    "description": [
+      "Puengluang Baanramba vs. Akif Guluzada | Muay Thai | Flyweight",
+      "Pichitchai PK Saenchai vs. Petpairin Sor Jor Tongprachin | Muay Thai | Catchweight",
+      "Susuek TC Muaythai vs. Kritpet PK Saenchai | Muay Thai | Catchweight",
+      "Khunsuk Mor Krungthepthonburi  vs. Kongburapha Thiptamai | Muay Thai | Catchweight",
+      "Yoddoi Kaewsamrit vs. Petnaya Bang Saen Fight Club | Muay Thai | Catchweight",
+      "Hern NF Looksuan vs. Hinlekfai Samchaiwisetsuk | Muay Thai | Catchweight",
+      "Otis Waghorn vs. Pentor SP Kansart Paeminburi | Muay Thai | Catchweight",
+      "Natalia Diachkova vs. Taylor McClatchie | Muay Thai | Strawweight",
+      "Ayad Albadr vs. Banna Hayashi | Muay Thai | Strawweight",
+      "Ramazan Karimov vs. Erzhan Zhanyshbek Uulu | Mixed Martial Arts | Featherweight",
+      "Fajar vs. Jean Claude Saclag | Mixed Martial Arts | Flyweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-17T12:30:00+00:00",
+        "end": "2025-01-17T16:31:48+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995293+00:00Z"
+  },
+  {
+    "url": "https://watch.onefc.com/events/onefightnight27",
+    "organization": "One Championship",
+    "title": "ONE Fight Night 27: Tang vs. Abdullaev",
+    "date": "2025-01-11T01:00:00+00:00",
+    "description": [
+      "Tang Kai vs. Akbar Abdullaev | Mixed Martial Arts | Catchweight",
+      "Kulabdam Sor Jor Piek Uthai vs. John Lineker  | Muay Thai | Catchweight",
+      "Denice Zamboanga vs. Alyona Rassohyna | Interim Atomweight World Championship",
+      "Luke Lessei vs. Cody Jerome | Muay Thai | Catchweight",
+      "Tommy Langaker vs. Dante Leon | Submission Grappling | Catchweight",
+      "Tatsumitsu Wada vs. Sanzhar Zakirov | Mixed Martial Arts | Strawweight",
+      "Aaron Canarte vs. Enkh-Orgil Baatarkhuu | Mixed Martial Arts | Catchweight",
+      "Chihiro Sawada vs. Meng Bo | Mixed Martial Arts | Atomweight",
+      "Suablack Tor Pran49 vs. Dmitrii Kovtun | Muay Thai | Bantamweight"
+    ],
+    "broadcast": [
+      "onefc",
+      "youtube"
+    ],
+    "venue": "Lumpinee Stadium, Bangkok",
+    "category": [
+      "mma",
+      "kickboxing",
+      "grappling",
+      "muay thai"
+    ],
+    "cards": {
+      "main_card": {
+        "start": "2025-01-11T01:00:00+00:00",
+        "end": "2025-01-11T05:19:18+00:00"
+      },
+      "prelims": {
+        "start": null,
+        "end": null
+      }
+    },
+    "last_updated": "2025-05-07T21:49:58.995764+00:00Z"
   }
 ]
